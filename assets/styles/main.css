@@ -174,7 +174,13 @@ body {
   text-decoration: none;
 }
 
-#index a.active { color: var(--ink); }
+#index a { margin: 1px 2px; border-radius: 6px; }
+
+/* The section on screen now; see the scroll spy in deck.js. */
+#index a.current { background: var(--accent); color: var(--ground); }
+
+/* Under the finger while sliding along the strip. */
+#index a.active { background: var(--ink); color: var(--ground); }
 
 #index-bubble {
   position: fixed;

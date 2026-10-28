@@ -111,6 +111,28 @@ for (const type of ['pointerup', 'pointercancel', 'lostpointercapture']) index.a
 index.addEventListener('click', (e) => e.preventDefault());
 
 
+/* ---- Scroll spy -----------------------------------------------------------
+
+  Highlights the jump strip entry for the section on screen: the last section
+  whose top has scrolled up past the line just under the sticky header.
+*/
+
+const sectionNodes = sections.map((s) => document.getElementById(s.id));
+let spyQueued = false;
+
+function spy() {
+  spyQueued = false;
+  const line = deck.querySelector('.section-title').offsetHeight + 1;
+  let current = 0;
+  sectionNodes.forEach((node, i) => { if (node.getBoundingClientRect().top <= line) current = i; });
+  [...index.children].forEach((a, i) => a.classList.toggle('current', i === current));
+}
+
+addEventListener('scroll', () => { if (!spyQueued) { spyQueued = true; requestAnimationFrame(spy); } }, { passive: true });
+addEventListener('resize', spy);
+spy();
+
+
 /* ---- Warm-up -------------------------------------------------------------
 
   Images below the fold load lazily, so the first screen appears fast. Once
