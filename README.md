@@ -20,10 +20,17 @@ Update the cards after editing the spreadsheet:
 % node tools/build-cards.mjs
 ```
 
-The script looks every name up on Scryfall and rewrites
-`assets/data/cards.json`. Mana value headers come from Scryfall, not from the
-sheet's columns. Typos are fixed by fuzzy matching; the script prints each
-correction and every name it could not find.
+The script looks every name up on Scryfall, picks each card's first printing,
+downloads its image into `assets/cards/`, and rewrites `assets/data/cards.json`.
+It needs `cwebp` (`brew install webp`).
+
+- Mana value headers come from Scryfall, not from the sheet's columns.
+- Typos are fixed by fuzzy matching; the script prints each correction and
+  every name it could not find.
+- Chosen printings are saved in `tools/printings.json`, so reruns only ask
+  Scryfall about new cards. To use a different printing, replace that card's
+  entry with `{ "set": "lea", "number": "232" }` (both are in the printing's
+  Scryfall URL) and rerun. Delete the entry to pick the first printing again.
 
 Deploy:
 ```

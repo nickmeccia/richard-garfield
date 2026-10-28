@@ -6,9 +6,19 @@
       node tools/build-cards.mjs path/to/other.csv
 
   Every card name is looked up on Scryfall (fuzzy, so typos survive) to get its
-  mana value and image. Mana values come from Scryfall, not from the column a
-  card sits in, so a card in the wrong column still lands under the right
-  header. The page reads only the JSON; it never talks to Scryfall's API.
+  mana value. Mana values come from Scryfall, not from the column a card sits
+  in, so a card in the wrong column still lands under the right header.
+
+  Each card is shown in its first printing — the oldest paper, non-promo
+  release — because that art is the one you remember. The chosen printing is
+  saved in tools/printings.json, so later runs only ask Scryfall about new
+  cards. To use a different printing, replace that card's entry with just
+  { "set": "…", "number": "…" } (from the printing's Scryfall URL); to pick
+  again from scratch, delete the entry.
+
+  Images are downloaded once into assets/cards/ as WebP (needs cwebp:
+  brew install webp) and served from this site; the page never talks to
+  Scryfall. Images no card uses any more are deleted.
 
   The CSV has three shapes, told apart by the label in its second column:
 
@@ -18,13 +28,17 @@
                                 (GROUPED columns only — the rest are flat lists)
 */
 
-import { readFileSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { execFileSync } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 import { dirname, join } from 'node:path';
+import { tmpdir } from 'node:os';
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), '..');
 const CSV = process.argv[2] ?? join(ROOT, 'notes/Commander Decks - Richard Garfield.csv');
 const OUT = join(ROOT, 'assets/data/cards.json');
+const PRINTINGS = join(ROOT, 'tools/printings.json');
+const IMAGES = join(ROOT, 'assets/cards');
 
 /* Page order. Combo is last on the page even though it is not last in the CSV. */
 const SECTIONS = [
@@ -176,21 +190,94 @@ async function lookup(cell) {
   return card;
 }
 
+/* The card Scryfall matched, before a printing is chosen. */
 function toCard(json) {
-  const faces = json.image_uris ? [json] : (json.card_faces ?? []).filter((f) => f.image_uris);
-  if (!faces.length) return null;
-  return {
-    name: json.name,
-    mv: json.cmc,
-    image: faces[0].image_uris.normal,
-    large: faces.map((f) => f.image_uris.large),
-    url: json.scryfall_uri.replace(/\?.*$/, ''),
-  };
+  return { name: json.name, mv: json.cmc, json };
 }
 
 async function resolve(cell) {
   const card = await lookup(cell);
-  return card ?? { name: cell.name, mv: costToMv(cell.cost), text: true };
+  if (!card) return { name: cell.name, mv: costToMv(cell.cost), text: true };
+  const print = await firstPrinting(card, cell.set);
+  return { name: card.name, mv: card.mv, faces: await download(print), url: print.url };
+}
+
+
+/* ---- First printings ---------------------------------------------------- */
+
+const printings = existsSync(PRINTINGS) ? JSON.parse(readFileSync(PRINTINGS, 'utf8')) : {};
+
+/*
+  Oldest paper printing first. Promos are skipped (prerelease stamps, judge
+  foils) and so is memorabilia (oversized cards, gold-bordered World
+  Championship decks). A card printed only in those falls back to the
+  printing Scryfall matched.
+*/
+async function firstPrinting(card, set) {
+  const pinned = printings[card.name];
+  if (pinned?.images) return pinned;
+
+  let found;
+  if (pinned?.set && pinned?.number) {
+    /* Hand-edited entry: just { "set": "lea", "number": "232" }. */
+    const { ok, json } = await scryfall(`https://api.scryfall.com/cards/${pinned.set}/${encodeURIComponent(pinned.number)}`);
+    if (!ok) throw new Error(`${card.name}: no printing ${pinned.set} ${pinned.number}`);
+    found = json;
+  } else {
+    const front = card.name.split(' // ')[0];
+    const url = new URL('https://api.scryfall.com/cards/search');
+    url.searchParams.set('q', `!"${front}" game:paper -is:promo -set_type:memorabilia${set ? ` set:${set}` : ''}`);
+    url.searchParams.set('unique', 'prints');
+    url.searchParams.set('order', 'released');
+    url.searchParams.set('dir', 'asc');
+    const { ok, json } = await scryfall(url);
+    found = (ok && json.data?.[0]) || card.json;
+  }
+  const faces = found.image_uris ? [found] : (found.card_faces ?? []).filter((f) => f.image_uris);
+  const print = {
+    set: found.set,
+    number: found.collector_number,
+    released: found.released_at,
+    url: found.scryfall_uri.replace(/\?.*$/, ''),
+    images: faces.map((f) => f.image_uris.large),
+  };
+  console.log(`  ${card.name}: ${found.set_name} (${print.released})`);
+  printings[card.name] = print;
+  writeFileSync(PRINTINGS, JSON.stringify(printings, null, 1) + '\n');
+  return print;
+}
+
+
+/* ---- Images ------------------------------------------------------------- */
+
+const used = new Set();
+
+/* Scryfall's "large" scan (672×936), as WebP: about 90 KB a card. */
+async function download(print) {
+  mkdirSync(IMAGES, { recursive: true });
+  const base = `${print.set}-${print.number}`.toLowerCase().replace(/[^a-z0-9-]+/g, '_');
+  const paths = [];
+  for (const [i, src] of print.images.entries()) {
+    const file = `${base}${print.images.length > 1 ? `-${i + 1}` : ''}.webp`;
+    used.add(file);
+    paths.push(`/assets/cards/${file}`);
+    if (existsSync(join(IMAGES, file))) continue;
+
+    await sleep(100);
+    const res = await fetch(src, { headers: { 'User-Agent': HEADERS['User-Agent'] } });
+    if (!res.ok) throw new Error(`image ${src}: ${res.status}`);
+    const tmp = join(tmpdir(), `rg-${file}.jpg`);
+    writeFileSync(tmp, Buffer.from(await res.arrayBuffer()));
+    execFileSync('cwebp', ['-quiet', '-q', '80', tmp, '-o', join(IMAGES, file)]);
+    rmSync(tmp);
+  }
+  return paths;
+}
+
+function pruneImages() {
+  for (const file of readdirSync(IMAGES)) {
+    if (!used.has(file)) { rmSync(join(IMAGES, file)); console.log(`  removed ${file}`); }
+  }
 }
 
 
@@ -232,6 +319,7 @@ async function build() {
     sections.push({ id, name, short, subsections });
   }
 
+  pruneImages();
   writeFileSync(OUT, JSON.stringify({ sections }, null, 1) + '\n');
   console.log(`wrote ${OUT}`);
 }

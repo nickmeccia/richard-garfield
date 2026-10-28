@@ -32,7 +32,7 @@ function card(c) {
   if (c.text) return el('div', { className: 'card card-text' }, el('span', {}, c.name));
 
   const button = el('button', { className: 'card', type: 'button', title: c.name },
-    el('img', { src: c.image, alt: c.name, width: 488, height: 680, loading: 'lazy', decoding: 'async' }));
+    el('img', { src: c.faces[0], alt: c.name, width: 672, height: 936, loading: 'lazy', decoding: 'async' }));
   button.addEventListener('click', () => openZoom(c));
   return button;
 }
@@ -56,7 +56,7 @@ for (const section of sections) {
 
 function openZoom(c) {
   zoom.replaceChildren(
-    el('div', { className: 'zoom-faces' }, ...c.large.map((src) => el('img', { src, alt: c.name }))),
+    el('div', { className: 'zoom-faces' }, ...c.faces.map((src) => el('img', { src, alt: c.name }))),
     el('a', { className: 'zoom-link', href: c.url, target: '_blank', rel: 'noopener' }, 'Scryfall ↗'));
   zoom.showModal();
 }
@@ -99,3 +99,16 @@ for (const type of ['pointerup', 'pointercancel']) {
   });
 }
 index.addEventListener('click', (e) => e.preventDefault());
+
+
+/* ---- Warm-up -------------------------------------------------------------
+
+  Images below the fold load lazily, so the first screen appears fast. Once
+  the page has settled, the rest load in the background, so a jump to any
+  section finds its cards already there. _headers lets the phone keep them.
+*/
+
+/* Not the window's load event: this module awaits the JSON first, so that event may already be over. */
+setTimeout(() => {
+  for (const img of deck.querySelectorAll('img[loading="lazy"]')) img.loading = 'eager';
+}, 1500);

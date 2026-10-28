@@ -1,0 +1,8 @@
+# Response headers for Cloudflare's asset router.
+#
+# A card image's filename is its set and collector number, so a file at a
+# given path never changes; a different printing gets a different name. Phones
+# can keep them for a year without asking again.
+
+/assets/cards/*
+  Cache-Control: public, max-age=31536000, immutable
