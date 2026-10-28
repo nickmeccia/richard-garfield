@@ -2565,5 +2565,23 @@
   "images": [
    "https://cards.scryfall.io/large/front/9/8/98fb1eaa-2871-491a-a4f5-3e358778ba40.jpg?1783944513"
   ]
+ },
+ "Dimir Signet": {
+  "set": "rav",
+  "number": "260",
+  "released": "2005-10-07",
+  "url": "https://scryfall.com/card/rav/260/dimir-signet",
+  "images": [
+   "https://cards.scryfall.io/large/front/9/a/9a9a1df5-a4e8-49a4-aebe-ca93894ccfcf.jpg?1783943598"
+  ]
+ },
+ "Talisman of Dominance": {
+  "set": "mrd",
+  "number": "253",
+  "released": "2003-10-02",
+  "url": "https://scryfall.com/card/mrd/253/talisman-of-dominance",
+  "images": [
+   "https://cards.scryfall.io/large/front/9/9/991037a2-fea2-49f5-8ace-ebbf9f678cff.jpg?1783944501"
+  ]
  }
 }

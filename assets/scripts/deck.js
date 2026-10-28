@@ -75,6 +75,19 @@ for (const section of sections) {
   index.append(el('a', { href: `#${section.id}`, title: section.name }, section.short));
 }
 
+/*
+  The bubble hides when the finger lifts, and also on its own 600 ms after the
+  last jump: mobile Safari does not always report the finger lifting, and a
+  bubble that never leaves covers the cards.
+*/
+let hideTimer;
+
+function hideBubble() {
+  clearTimeout(hideTimer);
+  bubble.hidden = true;
+  for (const a of index.children) a.classList.remove('active');
+}
+
 function jumpTo(y) {
   const links = [...index.children];
   const rect = index.getBoundingClientRect();
@@ -83,6 +96,8 @@ function jumpTo(y) {
   links.forEach((a, j) => a.classList.toggle('active', j === i));
   bubble.textContent = section.name;
   bubble.hidden = false;
+  clearTimeout(hideTimer);
+  hideTimer = setTimeout(hideBubble, 600);
   document.getElementById(section.id).scrollIntoView({ block: 'start', behavior: 'instant' });
 }
 
@@ -92,12 +107,7 @@ index.addEventListener('pointerdown', (e) => {
   jumpTo(e.clientY);
 });
 index.addEventListener('pointermove', (e) => { if (index.hasPointerCapture(e.pointerId)) jumpTo(e.clientY); });
-for (const type of ['pointerup', 'pointercancel']) {
-  index.addEventListener(type, () => {
-    bubble.hidden = true;
-    for (const a of index.children) a.classList.remove('active');
-  });
-}
+for (const type of ['pointerup', 'pointercancel', 'lostpointercapture']) index.addEventListener(type, hideBubble);
 index.addEventListener('click', (e) => e.preventDefault());
 
 

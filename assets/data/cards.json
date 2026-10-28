@@ -211,9 +211,20 @@
         "url": "https://scryfall.com/card/c15/55/thought-vessel"
        },
        {
-        "name": "Talismans, Signets",
+        "name": "Dimir Signet",
         "mv": 2,
-        "text": true
+        "faces": [
+         "/assets/cards/rav-260.webp"
+        ],
+        "url": "https://scryfall.com/card/rav/260/dimir-signet"
+       },
+       {
+        "name": "Talisman of Dominance",
+        "mv": 2,
+        "faces": [
+         "/assets/cards/mrd-253.webp"
+        ],
+        "url": "https://scryfall.com/card/mrd/253/talisman-of-dominance"
        },
        {
         "name": "Sapphire Medallion",
