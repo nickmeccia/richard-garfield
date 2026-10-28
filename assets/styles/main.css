@@ -1,0 +1,242 @@
+/*
+  main.css — the whole stylesheet.
+
+  Dark by design: the page is read at a game table, often in dim light, and
+  card art reads best on a dark ground. Sizes and colors are variables here.
+*/
+
+:root {
+  color-scheme: dark;
+
+  --ground: #16171a;
+  --ground-raised: #202227;
+  --ink: #e9e7e2;
+  --ink-quiet: #9a9894;
+  --accent: #5aa9e6;
+  --rule: #34363c;
+
+  --gutter: 12px;
+  --gap: 8px;           /* between cards */
+  --row-gap: 14px;      /* between one combo and the next */
+  --index-width: 26px;  /* the jump strip; the page keeps this much clear on the right */
+  --columns: 2;
+
+  --top: env(safe-area-inset-top, 0px);
+  --bottom: env(safe-area-inset-bottom, 0px);
+  --right: env(safe-area-inset-right, 0px);
+}
+
+@media (min-width: 640px)  { :root { --columns: 3; --gutter: 20px; --gap: 10px; } }
+@media (min-width: 900px)  { :root { --columns: 4; } }
+@media (min-width: 1200px) { :root { --columns: 5; } }
+@media (min-width: 1500px) { :root { --columns: 6; } }
+
+* { box-sizing: border-box; }
+
+html { scroll-padding-top: var(--top); }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font: 15px/1.3 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#deck {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: var(--top) calc(var(--gutter) + var(--index-width) + var(--right)) calc(40vh + var(--bottom)) var(--gutter);
+}
+
+
+/* ---- Headers ------------------------------------------------------------ */
+
+.section-title {
+  position: sticky;
+  top: var(--top);
+  z-index: 2;
+  margin: 0 calc(-1 * var(--gutter));
+  padding: 10px var(--gutter) 8px;
+  background: color-mix(in srgb, var(--ground) 88%, transparent);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.section + .section { margin-top: 28px; }
+
+.sub-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 18px 0 8px;
+  color: var(--ink-quiet);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.sub-title::after {
+  content: "";
+  flex: 1;
+  border-top: 1px solid var(--rule);
+}
+
+/* A mana value, drawn like a generic mana symbol. */
+.pip {
+  display: inline-grid;
+  place-items: center;
+  min-width: 24px;
+  height: 24px;
+  padding: 0 6px;
+  border-radius: 12px;
+  background: #cac5c0;
+  color: #111;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+
+/* ---- Cards -------------------------------------------------------------- */
+
+/* One .cards per row; every row starts on a new line, so two combos never share one. */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(var(--columns), minmax(0, 1fr));
+  gap: var(--gap);
+}
+
+.cards + .cards { margin-top: var(--row-gap); }
+
+.card {
+  display: block;
+  width: 100%;
+  aspect-ratio: 488 / 680;
+  padding: 0;
+  border: 0;
+  border-radius: 4.75% / 3.5%;
+  overflow: hidden;
+  background: var(--ground-raised);
+  cursor: zoom-in;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* A sheet entry that is not one card, like "Talismans, Signets". */
+.card-text {
+  display: grid;
+  place-items: center;
+  padding: 12px;
+  border: 1px solid var(--rule);
+  text-align: center;
+  font-weight: 600;
+  cursor: default;
+}
+
+
+/* ---- Jump strip --------------------------------------------------------- */
+
+#index {
+  position: fixed;
+  top: 50%;
+  right: var(--right);
+  z-index: 3;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  width: var(--index-width);
+  padding: 6px 0;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#index a {
+  display: block;
+  padding: 7px 0;
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+#index a.active { color: var(--ink); }
+
+#index-bubble {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 4;
+  transform: translate(-50%, -50%);
+  padding: 14px 22px;
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--ground-raised) 92%, transparent);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  font-size: 24px;
+  font-weight: 700;
+  pointer-events: none;
+}
+
+
+/* ---- Zoom --------------------------------------------------------------- */
+
+#zoom {
+  max-width: none;
+  max-height: none;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: calc(var(--top) + 16px) 16px calc(var(--bottom) + 16px);
+  border: 0;
+  background: transparent;
+  cursor: zoom-out;
+}
+
+#zoom[open] {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+#zoom::backdrop {
+  background: rgb(0 0 0 / 0.82);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.zoom-faces {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  min-height: 0;
+}
+
+.zoom-faces img {
+  width: min(92vw, 488px, (100dvh - 120px) * 488 / 680);
+  height: auto;
+  border-radius: 4.75% / 3.5%;
+}
+
+.zoom-link {
+  color: var(--accent);
+  font-size: 14px;
+  text-decoration: none;
+}

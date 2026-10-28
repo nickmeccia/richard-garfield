@@ -1,0 +1,22 @@
+/*
+  wrangler.jsonc — how this site gets onto the internet.
+
+  It is a static site: no Worker code runs, Cloudflare's asset router serves
+  every file, and nothing here needs a paid plan.
+
+  Deploys happen on push: in the Cloudflare dashboard, Workers & Pages → this
+  Worker → Settings → Builds is connected to the GitHub repository, and every
+  push to main deploys itself. To deploy by hand instead: npx wrangler deploy
+*/
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "richard-garfield",
+  "compatibility_date": "2026-10-01",
+
+  /* The whole repository is the assets directory, so the files that are
+     served are the files you edit. .assetsignore says which ones are not. */
+  "assets": {
+    "directory": ".",
+    "not_found_handling": "404-page"
+  }
+}

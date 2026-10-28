@@ -1,0 +1,12 @@
+# Which files in this repository are served to a browser. Same format as
+# .gitignore, read from the assets directory — the whole repository, per
+# wrangler.jsonc.
+#
+# This lists what IS served. The first line excludes everything and each line
+# after it puts one thing back, so a new file in the root (notes, the CSV, a
+# .env) is private until someone adds it here.
+
+/*
+
+!/index.html
+!/assets
