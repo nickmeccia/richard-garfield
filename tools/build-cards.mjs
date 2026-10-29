@@ -98,6 +98,11 @@ function costToMv(cost) {
   return mv;
 }
 
+/* "2UU" → "{2}{U}{U}", Scryfall's spelling, so the two kinds of cost compare equal. */
+function costToSymbols(cost) {
+  return (cost.match(/\d+|[A-Z]/g) ?? []).map((part) => `{${part}}`).join('');
+}
+
 function readSheet(rows) {
   const lists = new Map(SECTIONS.map((s) => [s.name, []]));   // name → cells, in reading order
   const combo = [];                                            // columns: { title, grouped, groups: [[cell]] }
@@ -192,14 +197,15 @@ async function lookup(cell) {
 
 /* The card Scryfall matched, before a printing is chosen. */
 function toCard(json) {
-  return { name: json.name, mv: json.cmc, json };
+  const cost = json.mana_cost || json.card_faces?.[0]?.mana_cost || '';
+  return { name: json.name, mv: json.cmc, cost, json };
 }
 
 async function resolve(cell) {
   const card = await lookup(cell);
-  if (!card) return { name: cell.name, mv: costToMv(cell.cost), text: true };
+  if (!card) return { name: cell.name, mv: costToMv(cell.cost), cost: costToSymbols(cell.cost), text: true };
   const print = await firstPrinting(card, cell.set);
-  return { name: card.name, mv: card.mv, faces: await download(print), url: print.url };
+  return { name: card.name, mv: card.mv, cost: card.cost, faces: await download(print), url: print.url };
 }
 
 
@@ -283,11 +289,17 @@ function pruneImages() {
 
 /* ---- Build -------------------------------------------------------------- */
 
+/*
+  cards.json holds each role's cards in sheet order, plus the combo columns
+  already split into their groups. Sorting by mana value and cost happens on
+  the page, which can show the same cards role-first or mana-value-first.
+*/
 async function build() {
   const { lists, comboColumns } = readSheet(parseCsv(readFileSync(CSV, 'utf8')));
-  const sections = [];
   await prefetch([...[...lists.values()].flat(), ...comboColumns.flatMap((c) => c.groups.flat())]);
 
+  const roles = [];
+  let combo;
   for (const { name, short } of SECTIONS) {
     const id = name.toLowerCase();
 
@@ -302,25 +314,17 @@ async function build() {
         }
         subsections.push({ label: col.title, rows });
       }
-      sections.push({ id, name, short, subsections });
+      combo = { id, name, short, subsections };
       continue;
     }
 
     const cards = [];
     for (const cell of lists.get(name)) cards.push(await resolve(cell));
-    const byMv = new Map();
-    for (const card of dedupe(cards)) {
-      if (!byMv.has(card.mv)) byMv.set(card.mv, []);
-      byMv.get(card.mv).push(card);
-    }
-    const subsections = [...byMv.keys()]
-      .sort((a, b) => a - b)
-      .map((mv) => ({ label: String(mv), mv: true, rows: [byMv.get(mv)] }));
-    sections.push({ id, name, short, subsections });
+    roles.push({ id, name, short, cards: dedupe(cards) });
   }
 
   pruneImages();
-  writeFileSync(OUT, JSON.stringify({ sections }, null, 1) + '\n');
+  writeFileSync(OUT, JSON.stringify({ roles, combo }, null, 1) + '\n');
   console.log(`wrote ${OUT}`);
 }
 

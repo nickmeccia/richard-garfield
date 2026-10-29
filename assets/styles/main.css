@@ -18,7 +18,7 @@
   --gutter: 12px;
   --gap: 8px;           /* between cards */
   --row-gap: 14px;      /* between one combo and the next */
-  --index-width: 26px;  /* the jump strip; the page keeps this much clear on the right */
+  --index-width: 44px;  /* the jump strip, a thumb wide; the page keeps this much clear on the right */
   --columns: 2;
 
   --top: env(safe-area-inset-top, 0px);
@@ -47,7 +47,7 @@ body {
 #deck {
   max-width: 1600px;
   margin: 0 auto;
-  padding: var(--top) calc(var(--gutter) + var(--index-width) + var(--right)) calc(40vh + var(--bottom)) var(--gutter);
+  padding: var(--top) calc(var(--index-width) + var(--right)) calc(40vh + var(--bottom)) var(--gutter);
 }
 
 
@@ -67,6 +67,12 @@ body {
   font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+.section-title-mv {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .section + .section { margin-top: 28px; }
@@ -148,6 +154,12 @@ body {
 
 /* ---- Jump strip --------------------------------------------------------- */
 
+/*
+  Every pixel of the links column is a target: the links are stacked with no
+  margin between them and split the column's height evenly, so a thumb that
+  lands between two labels still lands on one of them. Only the gap under the
+  sort button is dead space.
+*/
 #index {
   position: fixed;
   top: 50%;
@@ -157,30 +169,74 @@ body {
   display: flex;
   flex-direction: column;
   width: var(--index-width);
-  padding: 6px 0;
-  touch-action: none;
+  height: min(500px, 100dvh - var(--top) - var(--bottom) - 24px);
   user-select: none;
   -webkit-user-select: none;
 }
 
-#index a {
-  display: block;
-  padding: 7px 0;
-  color: var(--accent);
+#sort-toggle {
+  flex: none;
+  height: 40px;
+  margin-bottom: 18px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ink);
+  font-family: inherit;
   font-size: 11px;
   font-weight: 700;
   line-height: 1;
-  text-align: center;
+  cursor: pointer;
+  isolation: isolate;
+  position: relative;
+}
+
+/* Drawn smaller than the target, so it reads as a button without crowding. */
+#sort-toggle::before {
+  content: "";
+  position: absolute;
+  inset: 6px 4px;
+  z-index: -1;
+  border: 1.5px solid var(--ink-quiet);
+  border-radius: 8px;
+}
+
+#index-links {
+  flex: 1;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  touch-action: none;
+}
+
+#index-links a {
+  flex: 1 1 0;
+  display: grid;
+  place-items: center;
+  position: relative;
+  isolation: isolate;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
   text-decoration: none;
 }
 
-#index a { margin: 1px 2px; border-radius: 6px; }
+#index-links a.current,
+#index-links a.active { color: var(--ground); }
 
-/* The section on screen now; see the scroll spy in deck.js. */
-#index a.current { background: var(--accent); color: var(--ground); }
+#index-links a.current::before,
+#index-links a.active::before {
+  content: "";
+  position: absolute;
+  inset: 3px 7px;
+  z-index: -1;
+  border-radius: 7px;
+  background: var(--accent);
+}
 
-/* Under the finger while sliding along the strip. */
-#index a.active { background: var(--ink); color: var(--ground); }
+/* The section on screen now is blue (see the scroll spy in deck.js); the one under the finger while sliding is white. */
+#index-links a.active::before { background: var(--ink); }
 
 #index-bubble {
   position: fixed;

@@ -23,8 +23,12 @@
   <!-- Filled from assets/data/cards.json by assets/scripts/deck.js. -->
   <main id="deck"></main>
 
-  <!-- The jump strip on the right edge, like the letters in iOS Contacts. -->
-  <nav id="index" aria-label="Sections"></nav>
+  <!-- The jump strip on the right edge, like the letters in iOS Contacts,
+       topped by the button that switches between sorting by role and by mana value. -->
+  <nav id="index" aria-label="Sections">
+    <button id="sort-toggle" type="button"></button>
+    <div id="index-links"></div>
+  </nav>
   <div id="index-bubble" hidden></div>
 
   <!-- Tap a card to see it large; tap again to close. -->

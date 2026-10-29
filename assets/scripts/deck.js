@@ -1,12 +1,15 @@
 /*
   deck.js — draws the page from assets/data/cards.json.
 
-  The JSON is shaped like the page:
+  The JSON holds each role's cards in sheet order, plus the combo groups. The
+  page shows them one of two ways, switched by the button at the top of the
+  jump strip:
 
-    sections[]        Ramp, Draw, … Combo — a big header each
-      subsections[]   a mana value, or a combo column title — a small header each
-        rows[]        cards that share a line; a new row always starts a new line,
-                      which is how one combo is kept apart from the next
+    by role   Ramp, Draw, …     then mana value     then exact cost
+    by MV     Mana Value 0, 1…  then role           then exact cost
+
+  Either way each exact cost starts a new line — {1} and {U} are both mana
+  value 1 but never share a row — and Combo comes last, grouped as in the sheet.
 
   To change which cards appear, edit the spreadsheet and rerun
   tools/build-cards.mjs; nothing here needs to change.
@@ -14,10 +17,12 @@
 
 const deck = document.getElementById('deck');
 const index = document.getElementById('index');
+const links = document.getElementById('index-links');
+const toggle = document.getElementById('sort-toggle');
 const bubble = document.getElementById('index-bubble');
 const zoom = document.getElementById('zoom');
 
-const { sections } = await fetch('/assets/data/cards.json').then((r) => r.json());
+const { roles, combo } = await fetch('/assets/data/cards.json').then((r) => r.json());
 
 const el = (tag, props = {}, ...children) => {
   const node = Object.assign(document.createElement(tag), props);
@@ -26,30 +31,98 @@ const el = (tag, props = {}, ...children) => {
 };
 
 
+/* ---- Sorting ------------------------------------------------------------ */
+
+const VIEWS = {
+  role: { label: 'MV',   hint: 'Sort by mana value first' },
+  mv:   { label: 'Role', hint: 'Sort by role first' },
+};
+
+const pip = (mv) => el('span', { className: 'pip' }, String(mv));
+const colored = (cost) => (cost.match(/[WUBRG]/g) ?? []).length;
+
+/* One row per exact cost, generic-heavy costs first: {2}, then {1}{U}, then {U}{U}. */
+function rowsByCost(cards) {
+  const rows = new Map();
+  for (const c of cards) {
+    if (!rows.has(c.cost)) rows.set(c.cost, []);
+    rows.get(c.cost).push(c);
+  }
+  return [...rows.entries()].sort(([a], [b]) => colored(a) - colored(b)).map(([, row]) => row);
+}
+
+const manaValues = (cards) => [...new Set(cards.map((c) => c.mv))].sort((a, b) => a - b);
+
+function sectionsFor(view) {
+  const sections = view === 'role'
+    ? roles.map((role) => ({
+        ...role,
+        title: role.name,
+        subsections: manaValues(role.cards).map((mv) => ({
+          title: pip(mv),
+          rows: rowsByCost(role.cards.filter((c) => c.mv === mv)),
+        })),
+      }))
+    : manaValues(roles.flatMap((r) => r.cards)).map((mv) => ({
+        id: `mv-${mv}`,
+        name: `Mana Value ${mv}`,
+        short: String(mv),
+        title: el('span', { className: 'section-title-mv' }, pip(mv), 'Mana Value'),
+        subsections: roles
+          .filter((role) => role.cards.some((c) => c.mv === mv))
+          .map((role) => ({ title: role.name, rows: rowsByCost(role.cards.filter((c) => c.mv === mv)) })),
+      }));
+
+  return [...sections, { ...combo, title: combo.name, subsections: combo.subsections.map((s) => ({ ...s, title: s.label })) }];
+}
+
+
 /* ---- Cards -------------------------------------------------------------- */
 
+let warmed = false;
+
 function card(c) {
-  if (c.text) return el('div', { className: 'card card-text' }, el('span', {}, c.name));
+  if (c.text) return el('div', { className: 'card card-text', title: c.name }, el('span', {}, c.name));
 
   const button = el('button', { className: 'card', type: 'button', title: c.name },
-    el('img', { src: c.faces[0], alt: c.name, width: 672, height: 936, loading: 'lazy', decoding: 'async' }));
+    el('img', { src: c.faces[0], alt: c.name, width: 672, height: 936, loading: warmed ? 'eager' : 'lazy', decoding: 'async' }));
   button.addEventListener('click', () => openZoom(c));
   return button;
 }
 
-for (const section of sections) {
-  const node = el('section', { id: section.id, className: 'section' },
-    el('h2', { className: 'section-title' }, section.name));
+let view = 'role';
+let sections = [];
+try { if (localStorage.getItem('view') === 'mv') view = 'mv'; } catch {}
 
-  for (const sub of section.subsections) {
-    const title = sub.mv
-      ? el('h3', { className: 'sub-title' }, el('span', { className: 'pip' }, sub.label))
-      : el('h3', { className: 'sub-title' }, sub.label);
-    node.append(el('div', { className: 'subsection' }, title,
-      ...sub.rows.map((row) => el('div', { className: 'cards' }, ...row.map(card)))));
-  }
-  deck.append(node);
+function render() {
+  sections = sectionsFor(view);
+  deck.replaceChildren(...sections.map((section) =>
+    el('section', { id: section.id, className: 'section' },
+      el('h2', { className: 'section-title' }, section.title),
+      ...section.subsections.map((sub) => el('div', { className: 'subsection' },
+        el('h3', { className: 'sub-title' }, sub.title),
+        ...sub.rows.map((row) => el('div', { className: 'cards' }, ...row.map(card))))))));
+
+  links.replaceChildren(...sections.map((section) =>
+    el('a', { href: `#${section.id}`, title: section.name }, section.short)));
+
+  toggle.textContent = VIEWS[view].label;
+  toggle.title = toggle.ariaLabel = VIEWS[view].hint;
+  spy();
 }
+
+/* Switching keeps the card at the top of the screen in view, wherever it lands. */
+toggle.addEventListener('click', () => {
+  const line = deck.querySelector('.section-title').offsetHeight;
+  const anchor = [...deck.querySelectorAll('.card')].find((c) => c.getBoundingClientRect().bottom > line)?.title;
+
+  view = view === 'role' ? 'mv' : 'role';
+  try { localStorage.setItem('view', view); } catch {}
+  render();
+
+  const target = anchor && [...deck.querySelectorAll('.card')].find((c) => c.title === anchor);
+  if (target) target.scrollIntoView({ block: 'center', behavior: 'instant' });
+});
 
 
 /* ---- Zoom --------------------------------------------------------------- */
@@ -68,12 +141,8 @@ zoom.addEventListener('click', (e) => { if (!e.target.closest('a')) zoom.close()
 
   Touch the strip and slide a finger along it: the page jumps to whichever
   section is under the finger, and a bubble names it. Same as the letters on
-  the side of iOS Contacts.
+  the side of iOS Contacts. The links are drawn by render().
 */
-
-for (const section of sections) {
-  index.append(el('a', { href: `#${section.id}`, title: section.name }, section.short));
-}
 
 /*
   The bubble hides when the finger lifts, and also on its own 600 ms after the
@@ -85,15 +154,16 @@ let hideTimer;
 function hideBubble() {
   clearTimeout(hideTimer);
   bubble.hidden = true;
-  for (const a of index.children) a.classList.remove('active');
+  for (const a of links.children) a.classList.remove('active');
 }
 
+/* The link under the finger; above or below the strip counts as the first or last. */
 function jumpTo(y) {
-  const links = [...index.children];
-  const rect = index.getBoundingClientRect();
-  const i = Math.max(0, Math.min(links.length - 1, Math.floor(((y - rect.top) / rect.height) * links.length)));
+  const all = [...links.children];
+  let i = all.findIndex((a) => y < a.getBoundingClientRect().bottom);
+  if (i === -1) i = all.length - 1;
   const section = sections[i];
-  links.forEach((a, j) => a.classList.toggle('active', j === i));
+  all.forEach((a, j) => a.classList.toggle('active', j === i));
   bubble.textContent = section.name;
   bubble.hidden = false;
   clearTimeout(hideTimer);
@@ -101,14 +171,14 @@ function jumpTo(y) {
   document.getElementById(section.id).scrollIntoView({ block: 'start', behavior: 'instant' });
 }
 
-index.addEventListener('pointerdown', (e) => {
+links.addEventListener('pointerdown', (e) => {
   e.preventDefault();
-  index.setPointerCapture(e.pointerId);
+  links.setPointerCapture(e.pointerId);
   jumpTo(e.clientY);
 });
-index.addEventListener('pointermove', (e) => { if (index.hasPointerCapture(e.pointerId)) jumpTo(e.clientY); });
-for (const type of ['pointerup', 'pointercancel', 'lostpointercapture']) index.addEventListener(type, hideBubble);
-index.addEventListener('click', (e) => e.preventDefault());
+links.addEventListener('pointermove', (e) => { if (links.hasPointerCapture(e.pointerId)) jumpTo(e.clientY); });
+for (const type of ['pointerup', 'pointercancel', 'lostpointercapture']) links.addEventListener(type, hideBubble);
+links.addEventListener('click', (e) => e.preventDefault());
 
 
 /* ---- Scroll spy -----------------------------------------------------------
@@ -117,20 +187,19 @@ index.addEventListener('click', (e) => e.preventDefault());
   whose top has scrolled up past the line just under the sticky header.
 */
 
-const sectionNodes = sections.map((s) => document.getElementById(s.id));
 let spyQueued = false;
 
 function spy() {
   spyQueued = false;
   const line = deck.querySelector('.section-title').offsetHeight + 1;
   let current = 0;
-  sectionNodes.forEach((node, i) => { if (node.getBoundingClientRect().top <= line) current = i; });
-  [...index.children].forEach((a, i) => a.classList.toggle('current', i === current));
+  sections.forEach((s, i) => { if (document.getElementById(s.id).getBoundingClientRect().top <= line) current = i; });
+  [...links.children].forEach((a, i) => a.classList.toggle('current', i === current));
 }
 
 addEventListener('scroll', () => { if (!spyQueued) { spyQueued = true; requestAnimationFrame(spy); } }, { passive: true });
 addEventListener('resize', spy);
-spy();
+render();
 
 
 /* ---- Warm-up -------------------------------------------------------------
@@ -142,5 +211,6 @@ spy();
 
 /* Not the window's load event: this module awaits the JSON first, so that event may already be over. */
 setTimeout(() => {
+  warmed = true;
   for (const img of deck.querySelectorAll('img[loading="lazy"]')) img.loading = 'eager';
 }, 1500);

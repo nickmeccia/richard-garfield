@@ -1,425 +1,414 @@
 {
- "sections": [
+ "roles": [
   {
    "id": "ramp",
    "name": "Ramp",
    "short": "Ra",
-   "subsections": [
+   "cards": [
     {
-     "label": "0",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Mox Amber",
-        "mv": 0,
-        "faces": [
-         "/assets/cards/dom-224.webp"
-        ],
-        "url": "https://scryfall.com/card/dom/224/mox-amber"
-       },
-       {
-        "name": "Chrome Mox",
-        "mv": 0,
-        "faces": [
-         "/assets/cards/mrd-152.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/152/chrome-mox"
-       },
-       {
-        "name": "Mox Opal",
-        "mv": 0,
-        "faces": [
-         "/assets/cards/som-179.webp"
-        ],
-        "url": "https://scryfall.com/card/som/179/mox-opal"
-       },
-       {
-        "name": "Mox Diamond",
-        "mv": 0,
-        "faces": [
-         "/assets/cards/sth-138.webp"
-        ],
-        "url": "https://scryfall.com/card/sth/138/mox-diamond"
-       },
-       {
-        "name": "Lotus Petal",
-        "mv": 0,
-        "faces": [
-         "/assets/cards/tmp-294.webp"
-        ],
-        "url": "https://scryfall.com/card/tmp/294/lotus-petal"
-       },
-       {
-        "name": "Everflowing Chalice",
-        "mv": 0,
-        "faces": [
-         "/assets/cards/wwk-123.webp"
-        ],
-        "url": "https://scryfall.com/card/wwk/123/everflowing-chalice"
-       },
-       {
-        "name": "Lion's Eye Diamond",
-        "mv": 0,
-        "faces": [
-         "/assets/cards/mir-307.webp"
-        ],
-        "url": "https://scryfall.com/card/mir/307/lions-eye-diamond"
-       },
-       {
-        "name": "Paradise Mantle",
-        "mv": 0,
-        "faces": [
-         "/assets/cards/5dn-142.webp"
-        ],
-        "url": "https://scryfall.com/card/5dn/142/paradise-mantle"
-       },
-       {
-        "name": "Mox Poison",
-        "mv": 0,
-        "faces": [
-         "/assets/cards/mb2-608.webp"
-        ],
-        "url": "https://scryfall.com/card/mb2/608/mox-poison"
-       },
-       {
-        "name": "Mirrored Lotus",
-        "mv": 0,
-        "faces": [
-         "/assets/cards/cmb2-107.webp"
-        ],
-        "url": "https://scryfall.com/card/cmb2/107/mirrored-lotus"
-       }
-      ]
-     ]
+     "name": "Mox Amber",
+     "mv": 0,
+     "cost": "{0}",
+     "faces": [
+      "/assets/cards/dom-224.webp"
+     ],
+     "url": "https://scryfall.com/card/dom/224/mox-amber"
     },
     {
-     "label": "1",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Sol Ring",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/lea-269.webp"
-        ],
-        "url": "https://scryfall.com/card/lea/269/sol-ring"
-       },
-       {
-        "name": "Mana Vault",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/lea-259.webp"
-        ],
-        "url": "https://scryfall.com/card/lea/259/mana-vault"
-       },
-       {
-        "name": "Candelabra of Tawnos",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/atq-43.webp"
-        ],
-        "url": "https://scryfall.com/card/atq/43/candelabra-of-tawnos"
-       },
-       {
-        "name": "Wayfarer's Bauble",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/5dn-165.webp"
-        ],
-        "url": "https://scryfall.com/card/5dn/165/wayfarers-bauble"
-       },
-       {
-        "name": "Wanderer's Twig",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/lrw-265.webp"
-        ],
-        "url": "https://scryfall.com/card/lrw/265/wanderers-twig"
-       },
-       {
-        "name": "Fountainport Bell",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/blb-245.webp"
-        ],
-        "url": "https://scryfall.com/card/blb/245/fountainport-bell"
-       },
-       {
-        "name": "Springleaf Drum",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/lrw-261.webp"
-        ],
-        "url": "https://scryfall.com/card/lrw/261/springleaf-drum"
-       },
-       {
-        "name": "High Tide",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/fem-18a.webp"
-        ],
-        "url": "https://scryfall.com/card/fem/18a/high-tide"
-       },
-       {
-        "name": "Moonsnare Prototype",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/neo-69.webp"
-        ],
-        "url": "https://scryfall.com/card/neo/69/moonsnare-prototype"
-       }
-      ]
-     ]
+     "name": "Sol Ring",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/lea-269.webp"
+     ],
+     "url": "https://scryfall.com/card/lea/269/sol-ring"
     },
     {
-     "label": "2",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Grim Monolith",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/ulg-126.webp"
-        ],
-        "url": "https://scryfall.com/card/ulg/126/grim-monolith"
-       },
-       {
-        "name": "Arcane Signet",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/eld-331.webp"
-        ],
-        "url": "https://scryfall.com/card/eld/331/arcane-signet"
-       },
-       {
-        "name": "Fellwar Stone",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/drk-102.webp"
-        ],
-        "url": "https://scryfall.com/card/drk/102/fellwar-stone"
-       },
-       {
-        "name": "Thought Vessel",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/c15-55.webp"
-        ],
-        "url": "https://scryfall.com/card/c15/55/thought-vessel"
-       },
-       {
-        "name": "Dimir Signet",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/rav-260.webp"
-        ],
-        "url": "https://scryfall.com/card/rav/260/dimir-signet"
-       },
-       {
-        "name": "Talisman of Dominance",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/mrd-253.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/253/talisman-of-dominance"
-       },
-       {
-        "name": "Sapphire Medallion",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/tmp-306.webp"
-        ],
-        "url": "https://scryfall.com/card/tmp/306/sapphire-medallion"
-       },
-       {
-        "name": "Troop of Ponies",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/hob-3.webp"
-        ],
-        "url": "https://scryfall.com/card/hob/3/troop-of-ponies"
-       },
-       {
-        "name": "Dramatic Reversal",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/kld-44.webp"
-        ],
-        "url": "https://scryfall.com/card/kld/44/dramatic-reversal"
-       }
-      ]
-     ]
+     "name": "Grim Monolith",
+     "mv": 2,
+     "cost": "{2}",
+     "faces": [
+      "/assets/cards/ulg-126.webp"
+     ],
+     "url": "https://scryfall.com/card/ulg/126/grim-monolith"
     },
     {
-     "label": "3",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Burnished Hart",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/ths-213.webp"
-        ],
-        "url": "https://scryfall.com/card/ths/213/burnished-hart"
-       },
-       {
-        "name": "Bender's Waterskin",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/tla-255.webp"
-        ],
-        "url": "https://scryfall.com/card/tla/255/benders-waterskin"
-       },
-       {
-        "name": "Worn Powerstone",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/usg-318.webp"
-        ],
-        "url": "https://scryfall.com/card/usg/318/worn-powerstone"
-       },
-       {
-        "name": "Basalt Monolith",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/lea-231.webp"
-        ],
-        "url": "https://scryfall.com/card/lea/231/basalt-monolith"
-       },
-       {
-        "name": "Extraplanar Lens",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mrd-169.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/169/extraplanar-lens"
-       }
-      ]
-     ]
+     "name": "Burnished Hart",
+     "mv": 3,
+     "cost": "{3}",
+     "faces": [
+      "/assets/cards/ths-213.webp"
+     ],
+     "url": "https://scryfall.com/card/ths/213/burnished-hart"
     },
     {
-     "label": "4",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Solemn Simulacrum",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/mrd-245.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/245/solemn-simulacrum"
-       },
-       {
-        "name": "Thran Dynamo",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/uds-139.webp"
-        ],
-        "url": "https://scryfall.com/card/uds/139/thran-dynamo"
-       },
-       {
-        "name": "Hedron Archive",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/bfz-223.webp"
-        ],
-        "url": "https://scryfall.com/card/bfz/223/hedron-archive"
-       },
-       {
-        "name": "Sisay's Ring",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/vis-154.webp"
-        ],
-        "url": "https://scryfall.com/card/vis/154/sisays-ring"
-       },
-       {
-        "name": "Urza, Lord High Artificer",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/mh1-75.webp"
-        ],
-        "url": "https://scryfall.com/card/mh1/75/urza-lord-high-artificer"
-       },
-       {
-        "name": "Turnabout",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/usg-105.webp"
-        ],
-        "url": "https://scryfall.com/card/usg/105/turnabout"
-       }
-      ]
-     ]
+     "name": "Solemn Simulacrum",
+     "mv": 4,
+     "cost": "{4}",
+     "faces": [
+      "/assets/cards/mrd-245.webp"
+     ],
+     "url": "https://scryfall.com/card/mrd/245/solemn-simulacrum"
     },
     {
-     "label": "5",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Gilded Lotus",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/mrd-175.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/175/gilded-lotus"
-       },
-       {
-        "name": "Throne of Eldraine",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/woc-28.webp"
-        ],
-        "url": "https://scryfall.com/card/woc/28/throne-of-eldraine"
-       },
-       {
-        "name": "The Eternity Elevator",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/eoe-241.webp"
-        ],
-        "url": "https://scryfall.com/card/eoe/241/the-eternity-elevator"
-       },
-       {
-        "name": "Gauntlet of Power",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/tsp-255.webp"
-        ],
-        "url": "https://scryfall.com/card/tsp/255/gauntlet-of-power"
-       }
-      ]
-     ]
+     "name": "Gilded Lotus",
+     "mv": 5,
+     "cost": "{5}",
+     "faces": [
+      "/assets/cards/mrd-175.webp"
+     ],
+     "url": "https://scryfall.com/card/mrd/175/gilded-lotus"
     },
     {
-     "label": "6",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Caged Sun",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/nph-132.webp"
-        ],
-        "url": "https://scryfall.com/card/nph/132/caged-sun"
-       },
-       {
-        "name": "Dreamstone Hedron",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/roe-216.webp"
-        ],
-        "url": "https://scryfall.com/card/roe/216/dreamstone-hedron"
-       }
-      ]
-     ]
+     "name": "Caged Sun",
+     "mv": 6,
+     "cost": "{6}",
+     "faces": [
+      "/assets/cards/nph-132.webp"
+     ],
+     "url": "https://scryfall.com/card/nph/132/caged-sun"
+    },
+    {
+     "name": "Chrome Mox",
+     "mv": 0,
+     "cost": "{0}",
+     "faces": [
+      "/assets/cards/mrd-152.webp"
+     ],
+     "url": "https://scryfall.com/card/mrd/152/chrome-mox"
+    },
+    {
+     "name": "Mana Vault",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/lea-259.webp"
+     ],
+     "url": "https://scryfall.com/card/lea/259/mana-vault"
+    },
+    {
+     "name": "Arcane Signet",
+     "mv": 2,
+     "cost": "{2}",
+     "faces": [
+      "/assets/cards/eld-331.webp"
+     ],
+     "url": "https://scryfall.com/card/eld/331/arcane-signet"
+    },
+    {
+     "name": "Bender's Waterskin",
+     "mv": 3,
+     "cost": "{3}",
+     "faces": [
+      "/assets/cards/tla-255.webp"
+     ],
+     "url": "https://scryfall.com/card/tla/255/benders-waterskin"
+    },
+    {
+     "name": "Thran Dynamo",
+     "mv": 4,
+     "cost": "{4}",
+     "faces": [
+      "/assets/cards/uds-139.webp"
+     ],
+     "url": "https://scryfall.com/card/uds/139/thran-dynamo"
+    },
+    {
+     "name": "Throne of Eldraine",
+     "mv": 5,
+     "cost": "{5}",
+     "faces": [
+      "/assets/cards/woc-28.webp"
+     ],
+     "url": "https://scryfall.com/card/woc/28/throne-of-eldraine"
+    },
+    {
+     "name": "Dreamstone Hedron",
+     "mv": 6,
+     "cost": "{6}",
+     "faces": [
+      "/assets/cards/roe-216.webp"
+     ],
+     "url": "https://scryfall.com/card/roe/216/dreamstone-hedron"
+    },
+    {
+     "name": "Mox Opal",
+     "mv": 0,
+     "cost": "{0}",
+     "faces": [
+      "/assets/cards/som-179.webp"
+     ],
+     "url": "https://scryfall.com/card/som/179/mox-opal"
+    },
+    {
+     "name": "Candelabra of Tawnos",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/atq-43.webp"
+     ],
+     "url": "https://scryfall.com/card/atq/43/candelabra-of-tawnos"
+    },
+    {
+     "name": "Fellwar Stone",
+     "mv": 2,
+     "cost": "{2}",
+     "faces": [
+      "/assets/cards/drk-102.webp"
+     ],
+     "url": "https://scryfall.com/card/drk/102/fellwar-stone"
+    },
+    {
+     "name": "Worn Powerstone",
+     "mv": 3,
+     "cost": "{3}",
+     "faces": [
+      "/assets/cards/usg-318.webp"
+     ],
+     "url": "https://scryfall.com/card/usg/318/worn-powerstone"
+    },
+    {
+     "name": "Hedron Archive",
+     "mv": 4,
+     "cost": "{4}",
+     "faces": [
+      "/assets/cards/bfz-223.webp"
+     ],
+     "url": "https://scryfall.com/card/bfz/223/hedron-archive"
+    },
+    {
+     "name": "The Eternity Elevator",
+     "mv": 5,
+     "cost": "{5}",
+     "faces": [
+      "/assets/cards/eoe-241.webp"
+     ],
+     "url": "https://scryfall.com/card/eoe/241/the-eternity-elevator"
+    },
+    {
+     "name": "Mox Diamond",
+     "mv": 0,
+     "cost": "{0}",
+     "faces": [
+      "/assets/cards/sth-138.webp"
+     ],
+     "url": "https://scryfall.com/card/sth/138/mox-diamond"
+    },
+    {
+     "name": "Wayfarer's Bauble",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/5dn-165.webp"
+     ],
+     "url": "https://scryfall.com/card/5dn/165/wayfarers-bauble"
+    },
+    {
+     "name": "Thought Vessel",
+     "mv": 2,
+     "cost": "{2}",
+     "faces": [
+      "/assets/cards/c15-55.webp"
+     ],
+     "url": "https://scryfall.com/card/c15/55/thought-vessel"
+    },
+    {
+     "name": "Basalt Monolith",
+     "mv": 3,
+     "cost": "{3}",
+     "faces": [
+      "/assets/cards/lea-231.webp"
+     ],
+     "url": "https://scryfall.com/card/lea/231/basalt-monolith"
+    },
+    {
+     "name": "Sisay's Ring",
+     "mv": 4,
+     "cost": "{4}",
+     "faces": [
+      "/assets/cards/vis-154.webp"
+     ],
+     "url": "https://scryfall.com/card/vis/154/sisays-ring"
+    },
+    {
+     "name": "Gauntlet of Power",
+     "mv": 5,
+     "cost": "{5}",
+     "faces": [
+      "/assets/cards/tsp-255.webp"
+     ],
+     "url": "https://scryfall.com/card/tsp/255/gauntlet-of-power"
+    },
+    {
+     "name": "Lotus Petal",
+     "mv": 0,
+     "cost": "{0}",
+     "faces": [
+      "/assets/cards/tmp-294.webp"
+     ],
+     "url": "https://scryfall.com/card/tmp/294/lotus-petal"
+    },
+    {
+     "name": "Wanderer's Twig",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/lrw-265.webp"
+     ],
+     "url": "https://scryfall.com/card/lrw/265/wanderers-twig"
+    },
+    {
+     "name": "Dimir Signet",
+     "mv": 2,
+     "cost": "{2}",
+     "faces": [
+      "/assets/cards/rav-260.webp"
+     ],
+     "url": "https://scryfall.com/card/rav/260/dimir-signet"
+    },
+    {
+     "name": "Extraplanar Lens",
+     "mv": 3,
+     "cost": "{3}",
+     "faces": [
+      "/assets/cards/mrd-169.webp"
+     ],
+     "url": "https://scryfall.com/card/mrd/169/extraplanar-lens"
+    },
+    {
+     "name": "Urza, Lord High Artificer",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/mh1-75.webp"
+     ],
+     "url": "https://scryfall.com/card/mh1/75/urza-lord-high-artificer"
+    },
+    {
+     "name": "Everflowing Chalice",
+     "mv": 0,
+     "cost": "{0}",
+     "faces": [
+      "/assets/cards/wwk-123.webp"
+     ],
+     "url": "https://scryfall.com/card/wwk/123/everflowing-chalice"
+    },
+    {
+     "name": "Fountainport Bell",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/blb-245.webp"
+     ],
+     "url": "https://scryfall.com/card/blb/245/fountainport-bell"
+    },
+    {
+     "name": "Talisman of Dominance",
+     "mv": 2,
+     "cost": "{2}",
+     "faces": [
+      "/assets/cards/mrd-253.webp"
+     ],
+     "url": "https://scryfall.com/card/mrd/253/talisman-of-dominance"
+    },
+    {
+     "name": "Turnabout",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/usg-105.webp"
+     ],
+     "url": "https://scryfall.com/card/usg/105/turnabout"
+    },
+    {
+     "name": "Lion's Eye Diamond",
+     "mv": 0,
+     "cost": "{0}",
+     "faces": [
+      "/assets/cards/mir-307.webp"
+     ],
+     "url": "https://scryfall.com/card/mir/307/lions-eye-diamond"
+    },
+    {
+     "name": "Springleaf Drum",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/lrw-261.webp"
+     ],
+     "url": "https://scryfall.com/card/lrw/261/springleaf-drum"
+    },
+    {
+     "name": "Sapphire Medallion",
+     "mv": 2,
+     "cost": "{2}",
+     "faces": [
+      "/assets/cards/tmp-306.webp"
+     ],
+     "url": "https://scryfall.com/card/tmp/306/sapphire-medallion"
+    },
+    {
+     "name": "Paradise Mantle",
+     "mv": 0,
+     "cost": "{0}",
+     "faces": [
+      "/assets/cards/5dn-142.webp"
+     ],
+     "url": "https://scryfall.com/card/5dn/142/paradise-mantle"
+    },
+    {
+     "name": "High Tide",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/fem-18a.webp"
+     ],
+     "url": "https://scryfall.com/card/fem/18a/high-tide"
+    },
+    {
+     "name": "Troop of Ponies",
+     "mv": 2,
+     "cost": "{2}",
+     "faces": [
+      "/assets/cards/hob-3.webp"
+     ],
+     "url": "https://scryfall.com/card/hob/3/troop-of-ponies"
+    },
+    {
+     "name": "Mox Poison",
+     "mv": 0,
+     "cost": "{0}",
+     "faces": [
+      "/assets/cards/mb2-608.webp"
+     ],
+     "url": "https://scryfall.com/card/mb2/608/mox-poison"
+    },
+    {
+     "name": "Moonsnare Prototype",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/neo-69.webp"
+     ],
+     "url": "https://scryfall.com/card/neo/69/moonsnare-prototype"
+    },
+    {
+     "name": "Dramatic Reversal",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/kld-44.webp"
+     ],
+     "url": "https://scryfall.com/card/kld/44/dramatic-reversal"
+    },
+    {
+     "name": "Mirrored Lotus",
+     "mv": 0,
+     "cost": "{0}",
+     "faces": [
+      "/assets/cards/cmb2-107.webp"
+     ],
+     "url": "https://scryfall.com/card/cmb2/107/mirrored-lotus"
     }
    ]
   },
@@ -427,470 +416,474 @@
    "id": "draw",
    "name": "Draw",
    "short": "Dr",
-   "subsections": [
+   "cards": [
     {
-     "label": "1",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Sensei's Divining Top",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/chk-268.webp"
-        ],
-        "url": "https://scryfall.com/card/chk/268/senseis-divining-top"
-       },
-       {
-        "name": "Mystic Remora",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/ice-87.webp"
-        ],
-        "url": "https://scryfall.com/card/ice/87/mystic-remora"
-       },
-       {
-        "name": "Ponder",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/lrw-79.webp"
-        ],
-        "url": "https://scryfall.com/card/lrw/79/ponder"
-       },
-       {
-        "name": "Preordain",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/m11-70.webp"
-        ],
-        "url": "https://scryfall.com/card/m11/70/preordain"
-       },
-       {
-        "name": "Opt",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/inv-64.webp"
-        ],
-        "url": "https://scryfall.com/card/inv/64/opt"
-       },
-       {
-        "name": "Consider",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/mid-44.webp"
-        ],
-        "url": "https://scryfall.com/card/mid/44/consider"
-       },
-       {
-        "name": "Serum Visions",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/5dn-36.webp"
-        ],
-        "url": "https://scryfall.com/card/5dn/36/serum-visions"
-       },
-       {
-        "name": "Careful Study",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/ody-70.webp"
-        ],
-        "url": "https://scryfall.com/card/ody/70/careful-study"
-       },
-       {
-        "name": "Sleight of Hand",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/p02-46.webp"
-        ],
-        "url": "https://scryfall.com/card/p02/46/sleight-of-hand"
-       },
-       {
-        "name": "Visions of Beyond",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/m12-80.webp"
-        ],
-        "url": "https://scryfall.com/card/m12/80/visions-of-beyond"
-       },
-       {
-        "name": "Portent",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/ice-90.webp"
-        ],
-        "url": "https://scryfall.com/card/ice/90/portent"
-       },
-       {
-        "name": "Peek",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/ody-91.webp"
-        ],
-        "url": "https://scryfall.com/card/ody/91/peek"
-       }
-      ]
-     ]
+     "name": "Sensei's Divining Top",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/chk-268.webp"
+     ],
+     "url": "https://scryfall.com/card/chk/268/senseis-divining-top"
     },
     {
-     "label": "2",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Faerie Mastermind",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/mom-58.webp"
-        ],
-        "url": "https://scryfall.com/card/mom/58/faerie-mastermind"
-       },
-       {
-        "name": "Ledger Shredder",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/snc-46.webp"
-        ],
-        "url": "https://scryfall.com/card/snc/46/ledger-shredder"
-       },
-       {
-        "name": "Pollywog Prodigy",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/blc-15.webp"
-        ],
-        "url": "https://scryfall.com/card/blc/15/pollywog-prodigy"
-       },
-       {
-        "name": "Impulse",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/vis-34.webp"
-        ],
-        "url": "https://scryfall.com/card/vis/34/impulse"
-       },
-       {
-        "name": "Anticipate",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/dtk-45.webp"
-        ],
-        "url": "https://scryfall.com/card/dtk/45/anticipate"
-       },
-       {
-        "name": "Chart a Course",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/xln-48.webp"
-        ],
-        "url": "https://scryfall.com/card/xln/48/chart-a-course"
-       },
-       {
-        "name": "Flow State",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/sos-49.webp"
-        ],
-        "url": "https://scryfall.com/card/sos/49/flow-state"
-       },
-       {
-        "name": "The Reality Chip",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/neo-74.webp"
-        ],
-        "url": "https://scryfall.com/card/neo/74/the-reality-chip"
-       }
-      ]
-     ]
+     "name": "Faerie Mastermind",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/mom-58.webp"
+     ],
+     "url": "https://scryfall.com/card/mom/58/faerie-mastermind"
     },
     {
-     "label": "3",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Rhystic Study",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/pcy-45.webp"
-        ],
-        "url": "https://scryfall.com/card/pcy/45/rhystic-study"
-       },
-       {
-        "name": "Frantic Search",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/ulg-32.webp"
-        ],
-        "url": "https://scryfall.com/card/ulg/32/frantic-search"
-       },
-       {
-        "name": "Windfall",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/usg-111.webp"
-        ],
-        "url": "https://scryfall.com/card/usg/111/windfall"
-       },
-       {
-        "name": "Timetwister",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/lea-84.webp"
-        ],
-        "url": "https://scryfall.com/card/lea/84/timetwister"
-       },
-       {
-        "name": "Thirst for Discovery",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/vow-85.webp"
-        ],
-        "url": "https://scryfall.com/card/vow/85/thirst-for-discovery"
-       },
-       {
-        "name": "Thirst for Knowledge",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mrd-53.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/53/thirst-for-knowledge"
-       },
-       {
-        "name": "Thirst for Identity",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/ecl-79.webp"
-        ],
-        "url": "https://scryfall.com/card/ecl/79/thirst-for-identity"
-       },
-       {
-        "name": "Day's Undoing",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/ori-51.webp"
-        ],
-        "url": "https://scryfall.com/card/ori/51/days-undoing"
-       },
-       {
-        "name": "Borrowing 100,000 Arrows",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/ptk-35.webp"
-        ],
-        "url": "https://scryfall.com/card/ptk/35/borrowing-100000-arrows"
-       },
-       {
-        "name": "Jace's Archivist",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/m12-59.webp"
-        ],
-        "url": "https://scryfall.com/card/m12/59/jaces-archivist"
-       }
-      ]
-     ]
+     "name": "Rhystic Study",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/pcy-45.webp"
+     ],
+     "url": "https://scryfall.com/card/pcy/45/rhystic-study"
     },
     {
-     "label": "4",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "The One Ring",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/ltr-0.webp"
-        ],
-        "url": "https://scryfall.com/card/ltr/0/the-one-ring"
-       },
-       {
-        "name": "Teferi's Ageless Insight",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/m21-76.webp"
-        ],
-        "url": "https://scryfall.com/card/m21/76/teferis-ageless-insight"
-       },
-       {
-        "name": "Archmage Emeritus",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/stx-37.webp"
-        ],
-        "url": "https://scryfall.com/card/stx/37/archmage-emeritus"
-       },
-       {
-        "name": "Crystal Skull, Isu Spyglass",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/acr-15.webp"
-        ],
-        "url": "https://scryfall.com/card/acr/15/crystal-skull-isu-spyglass"
-       },
-       {
-        "name": "Teferi, Master of Time",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/m21-75.webp"
-        ],
-        "url": "https://scryfall.com/card/m21/75/teferi-master-of-time"
-       },
-       {
-        "name": "The Theorist, Jace Beleren",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/fra-43.webp"
-        ],
-        "url": "https://scryfall.com/card/fra/43/the-theorist-jace-beleren"
-       },
-       {
-        "name": "Memory Deluge",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/mid-62.webp"
-        ],
-        "url": "https://scryfall.com/card/mid/62/memory-deluge"
-       },
-       {
-        "name": "Traverse Eternity",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/who-60.webp"
-        ],
-        "url": "https://scryfall.com/card/who/60/traverse-eternity"
-       },
-       {
-        "name": "Slithermuse",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/mor-50.webp"
-        ],
-        "url": "https://scryfall.com/card/mor/50/slithermuse"
-       },
-       {
-        "name": "Drawn from Dreams",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/m20-56.webp"
-        ],
-        "url": "https://scryfall.com/card/m20/56/drawn-from-dreams"
-       },
-       {
-        "name": "Fact or Fiction",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/inv-57.webp"
-        ],
-        "url": "https://scryfall.com/card/inv/57/fact-or-fiction"
-       }
-      ]
-     ]
+     "name": "The One Ring",
+     "mv": 4,
+     "cost": "{4}",
+     "faces": [
+      "/assets/cards/ltr-0.webp"
+     ],
+     "url": "https://scryfall.com/card/ltr/0/the-one-ring"
     },
     {
-     "label": "5",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Mind's Eye",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/mrd-205.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/205/minds-eye"
-       },
-       {
-        "name": "Memory Jar",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/ulg-129.webp"
-        ],
-        "url": "https://scryfall.com/card/ulg/129/memory-jar"
-       },
-       {
-        "name": "Mulldrifter",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/lrw-76.webp"
-        ],
-        "url": "https://scryfall.com/card/lrw/76/mulldrifter"
-       },
-       {
-        "name": "Lórien Revealed",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/ltr-60.webp"
-        ],
-        "url": "https://scryfall.com/card/ltr/60/l%C3%B3rien-revealed"
-       },
-       {
-        "name": "Mystic Confluence",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/c15-14.webp"
-        ],
-        "url": "https://scryfall.com/card/c15/14/mystic-confluence"
-       },
-       {
-        "name": "Time Reversal",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/m11-75.webp"
-        ],
-        "url": "https://scryfall.com/card/m11/75/time-reversal"
-       },
-       {
-        "name": "Reverse Engineer",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/aer-42.webp"
-        ],
-        "url": "https://scryfall.com/card/aer/42/reverse-engineer"
-       }
-      ]
-     ]
+     "name": "Mind's Eye",
+     "mv": 5,
+     "cost": "{5}",
+     "faces": [
+      "/assets/cards/mrd-205.webp"
+     ],
+     "url": "https://scryfall.com/card/mrd/205/minds-eye"
     },
     {
-     "label": "6",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Ugin, the Ineffable",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/war-2.webp"
-        ],
-        "url": "https://scryfall.com/card/war/2/ugin-the-ineffable"
-       },
-       {
-        "name": "Consecrated Sphinx",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/mbs-21.webp"
-        ],
-        "url": "https://scryfall.com/card/mbs/21/consecrated-sphinx"
-       },
-       {
-        "name": "Time Spiral",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/usg-103.webp"
-        ],
-        "url": "https://scryfall.com/card/usg/103/time-spiral"
-       },
-       {
-        "name": "Echo of Eons",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/mh1-46.webp"
-        ],
-        "url": "https://scryfall.com/card/mh1/46/echo-of-eons"
-       }
-      ]
-     ]
+     "name": "Ugin, the Ineffable",
+     "mv": 6,
+     "cost": "{6}",
+     "faces": [
+      "/assets/cards/war-2.webp"
+     ],
+     "url": "https://scryfall.com/card/war/2/ugin-the-ineffable"
+    },
+    {
+     "name": "Mystic Remora",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/ice-87.webp"
+     ],
+     "url": "https://scryfall.com/card/ice/87/mystic-remora"
+    },
+    {
+     "name": "Ledger Shredder",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/snc-46.webp"
+     ],
+     "url": "https://scryfall.com/card/snc/46/ledger-shredder"
+    },
+    {
+     "name": "Frantic Search",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/ulg-32.webp"
+     ],
+     "url": "https://scryfall.com/card/ulg/32/frantic-search"
+    },
+    {
+     "name": "Teferi's Ageless Insight",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/m21-76.webp"
+     ],
+     "url": "https://scryfall.com/card/m21/76/teferis-ageless-insight"
+    },
+    {
+     "name": "Memory Jar",
+     "mv": 5,
+     "cost": "{5}",
+     "faces": [
+      "/assets/cards/ulg-129.webp"
+     ],
+     "url": "https://scryfall.com/card/ulg/129/memory-jar"
+    },
+    {
+     "name": "Consecrated Sphinx",
+     "mv": 6,
+     "cost": "{4}{U}{U}",
+     "faces": [
+      "/assets/cards/mbs-21.webp"
+     ],
+     "url": "https://scryfall.com/card/mbs/21/consecrated-sphinx"
+    },
+    {
+     "name": "Ponder",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/lrw-79.webp"
+     ],
+     "url": "https://scryfall.com/card/lrw/79/ponder"
+    },
+    {
+     "name": "Pollywog Prodigy",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/blc-15.webp"
+     ],
+     "url": "https://scryfall.com/card/blc/15/pollywog-prodigy"
+    },
+    {
+     "name": "Windfall",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/usg-111.webp"
+     ],
+     "url": "https://scryfall.com/card/usg/111/windfall"
+    },
+    {
+     "name": "Archmage Emeritus",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/stx-37.webp"
+     ],
+     "url": "https://scryfall.com/card/stx/37/archmage-emeritus"
+    },
+    {
+     "name": "Mulldrifter",
+     "mv": 5,
+     "cost": "{4}{U}",
+     "faces": [
+      "/assets/cards/lrw-76.webp"
+     ],
+     "url": "https://scryfall.com/card/lrw/76/mulldrifter"
+    },
+    {
+     "name": "Time Spiral",
+     "mv": 6,
+     "cost": "{4}{U}{U}",
+     "faces": [
+      "/assets/cards/usg-103.webp"
+     ],
+     "url": "https://scryfall.com/card/usg/103/time-spiral"
+    },
+    {
+     "name": "Preordain",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/m11-70.webp"
+     ],
+     "url": "https://scryfall.com/card/m11/70/preordain"
+    },
+    {
+     "name": "Impulse",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/vis-34.webp"
+     ],
+     "url": "https://scryfall.com/card/vis/34/impulse"
+    },
+    {
+     "name": "Timetwister",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/lea-84.webp"
+     ],
+     "url": "https://scryfall.com/card/lea/84/timetwister"
+    },
+    {
+     "name": "Crystal Skull, Isu Spyglass",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/acr-15.webp"
+     ],
+     "url": "https://scryfall.com/card/acr/15/crystal-skull-isu-spyglass"
+    },
+    {
+     "name": "Lórien Revealed",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/ltr-60.webp"
+     ],
+     "url": "https://scryfall.com/card/ltr/60/l%C3%B3rien-revealed"
+    },
+    {
+     "name": "Echo of Eons",
+     "mv": 6,
+     "cost": "{4}{U}{U}",
+     "faces": [
+      "/assets/cards/mh1-46.webp"
+     ],
+     "url": "https://scryfall.com/card/mh1/46/echo-of-eons"
+    },
+    {
+     "name": "Opt",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/inv-64.webp"
+     ],
+     "url": "https://scryfall.com/card/inv/64/opt"
+    },
+    {
+     "name": "Anticipate",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/dtk-45.webp"
+     ],
+     "url": "https://scryfall.com/card/dtk/45/anticipate"
+    },
+    {
+     "name": "Thirst for Discovery",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/vow-85.webp"
+     ],
+     "url": "https://scryfall.com/card/vow/85/thirst-for-discovery"
+    },
+    {
+     "name": "Teferi, Master of Time",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/m21-75.webp"
+     ],
+     "url": "https://scryfall.com/card/m21/75/teferi-master-of-time"
+    },
+    {
+     "name": "Mystic Confluence",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/c15-14.webp"
+     ],
+     "url": "https://scryfall.com/card/c15/14/mystic-confluence"
+    },
+    {
+     "name": "Consider",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/mid-44.webp"
+     ],
+     "url": "https://scryfall.com/card/mid/44/consider"
+    },
+    {
+     "name": "Chart a Course",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/xln-48.webp"
+     ],
+     "url": "https://scryfall.com/card/xln/48/chart-a-course"
+    },
+    {
+     "name": "Thirst for Knowledge",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/mrd-53.webp"
+     ],
+     "url": "https://scryfall.com/card/mrd/53/thirst-for-knowledge"
+    },
+    {
+     "name": "The Theorist, Jace Beleren",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/fra-43.webp"
+     ],
+     "url": "https://scryfall.com/card/fra/43/the-theorist-jace-beleren"
+    },
+    {
+     "name": "Time Reversal",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/m11-75.webp"
+     ],
+     "url": "https://scryfall.com/card/m11/75/time-reversal"
+    },
+    {
+     "name": "Serum Visions",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/5dn-36.webp"
+     ],
+     "url": "https://scryfall.com/card/5dn/36/serum-visions"
+    },
+    {
+     "name": "Flow State",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/sos-49.webp"
+     ],
+     "url": "https://scryfall.com/card/sos/49/flow-state"
+    },
+    {
+     "name": "Thirst for Identity",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/ecl-79.webp"
+     ],
+     "url": "https://scryfall.com/card/ecl/79/thirst-for-identity"
+    },
+    {
+     "name": "Memory Deluge",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/mid-62.webp"
+     ],
+     "url": "https://scryfall.com/card/mid/62/memory-deluge"
+    },
+    {
+     "name": "Reverse Engineer",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/aer-42.webp"
+     ],
+     "url": "https://scryfall.com/card/aer/42/reverse-engineer"
+    },
+    {
+     "name": "Careful Study",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/ody-70.webp"
+     ],
+     "url": "https://scryfall.com/card/ody/70/careful-study"
+    },
+    {
+     "name": "Day's Undoing",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/ori-51.webp"
+     ],
+     "url": "https://scryfall.com/card/ori/51/days-undoing"
+    },
+    {
+     "name": "Traverse Eternity",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/who-60.webp"
+     ],
+     "url": "https://scryfall.com/card/who/60/traverse-eternity"
+    },
+    {
+     "name": "Sleight of Hand",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/p02-46.webp"
+     ],
+     "url": "https://scryfall.com/card/p02/46/sleight-of-hand"
+    },
+    {
+     "name": "Borrowing 100,000 Arrows",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/ptk-35.webp"
+     ],
+     "url": "https://scryfall.com/card/ptk/35/borrowing-100000-arrows"
+    },
+    {
+     "name": "Slithermuse",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/mor-50.webp"
+     ],
+     "url": "https://scryfall.com/card/mor/50/slithermuse"
+    },
+    {
+     "name": "Visions of Beyond",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/m12-80.webp"
+     ],
+     "url": "https://scryfall.com/card/m12/80/visions-of-beyond"
+    },
+    {
+     "name": "Jace's Archivist",
+     "mv": 3,
+     "cost": "{1}{U}{U}",
+     "faces": [
+      "/assets/cards/m12-59.webp"
+     ],
+     "url": "https://scryfall.com/card/m12/59/jaces-archivist"
+    },
+    {
+     "name": "Drawn from Dreams",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/m20-56.webp"
+     ],
+     "url": "https://scryfall.com/card/m20/56/drawn-from-dreams"
+    },
+    {
+     "name": "Portent",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/ice-90.webp"
+     ],
+     "url": "https://scryfall.com/card/ice/90/portent"
+    },
+    {
+     "name": "The Reality Chip",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/neo-74.webp"
+     ],
+     "url": "https://scryfall.com/card/neo/74/the-reality-chip"
+    },
+    {
+     "name": "Fact or Fiction",
+     "mv": 4,
+     "cost": "{3}{U}",
+     "faces": [
+      "/assets/cards/inv-57.webp"
+     ],
+     "url": "https://scryfall.com/card/inv/57/fact-or-fiction"
+    },
+    {
+     "name": "Peek",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/ody-91.webp"
+     ],
+     "url": "https://scryfall.com/card/ody/91/peek"
     }
    ]
   },
@@ -898,190 +891,177 @@
    "id": "tutor",
    "name": "Tutor",
    "short": "Tu",
-   "subsections": [
+   "cards": [
     {
-     "label": "1",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Dizzy Spell",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/rav-43.webp"
-        ],
-        "url": "https://scryfall.com/card/rav/43/dizzy-spell"
-       },
-       {
-        "name": "Mystical Tutor",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/mir-80.webp"
-        ],
-        "url": "https://scryfall.com/card/mir/80/mystical-tutor"
-       },
-       {
-        "name": "Personal Tutor",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/por-64.webp"
-        ],
-        "url": "https://scryfall.com/card/por/64/personal-tutor"
-       }
-      ]
-     ]
+     "name": "Dizzy Spell",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/rav-43.webp"
+     ],
+     "url": "https://scryfall.com/card/rav/43/dizzy-spell"
     },
     {
-     "label": "2",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Merchant Scroll",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/hml-33.webp"
-        ],
-        "url": "https://scryfall.com/card/hml/33/merchant-scroll"
-       },
-       {
-        "name": "Muddle the Mixture",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/rav-60.webp"
-        ],
-        "url": "https://scryfall.com/card/rav/60/muddle-the-mixture"
-       }
-      ]
-     ]
+     "name": "Merchant Scroll",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/hml-33.webp"
+     ],
+     "url": "https://scryfall.com/card/hml/33/merchant-scroll"
     },
     {
-     "label": "3",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Long-Term Plans",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/scg-38.webp"
-        ],
-        "url": "https://scryfall.com/card/scg/38/long-term-plans"
-       },
-       {
-        "name": "Fabricate",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mrd-35.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/35/fabricate"
-       },
-       {
-        "name": "Drift of Phantasms",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/rav-46.webp"
-        ],
-        "url": "https://scryfall.com/card/rav/46/drift-of-phantasms"
-       },
-       {
-        "name": "Intuition",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/tmp-70.webp"
-        ],
-        "url": "https://scryfall.com/card/tmp/70/intuition"
-       },
-       {
-        "name": "Tezzeret, Cruel Captain",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/eoe-2.webp"
-        ],
-        "url": "https://scryfall.com/card/eoe/2/tezzeret-cruel-captain"
-       },
-       {
-        "name": "Solve the Equation",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/stx-54.webp"
-        ],
-        "url": "https://scryfall.com/card/stx/54/solve-the-equation"
-       },
-       {
-        "name": "Spellseeker",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/bbd-41.webp"
-        ],
-        "url": "https://scryfall.com/card/bbd/41/spellseeker"
-       },
-       {
-        "name": "Trinket Mage",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/5dn-39.webp"
-        ],
-        "url": "https://scryfall.com/card/5dn/39/trinket-mage"
-       },
-       {
-        "name": "Tribute Mage",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mh1-73.webp"
-        ],
-        "url": "https://scryfall.com/card/mh1/73/tribute-mage"
-       },
-       {
-        "name": "Trophy Mage",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/aer-48.webp"
-        ],
-        "url": "https://scryfall.com/card/aer/48/trophy-mage"
-       },
-       {
-        "name": "Transit Mage",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/dft-70.webp"
-        ],
-        "url": "https://scryfall.com/card/dft/70/transit-mage"
-       },
-       {
-        "name": "Treasure Mage",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mbs-34.webp"
-        ],
-        "url": "https://scryfall.com/card/mbs/34/treasure-mage"
-       }
-      ]
-     ]
+     "name": "Long-Term Plans",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/scg-38.webp"
+     ],
+     "url": "https://scryfall.com/card/scg/38/long-term-plans"
     },
     {
-     "label": "4",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Gifts Ungiven",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/chk-62.webp"
-        ],
-        "url": "https://scryfall.com/card/chk/62/gifts-ungiven"
-       },
-       {
-        "name": "Scour for Scrap",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/eoe-73.webp"
-        ],
-        "url": "https://scryfall.com/card/eoe/73/scour-for-scrap"
-       }
-      ]
-     ]
+     "name": "Gifts Ungiven",
+     "mv": 4,
+     "cost": "{3}{U}",
+     "faces": [
+      "/assets/cards/chk-62.webp"
+     ],
+     "url": "https://scryfall.com/card/chk/62/gifts-ungiven"
+    },
+    {
+     "name": "Mystical Tutor",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/mir-80.webp"
+     ],
+     "url": "https://scryfall.com/card/mir/80/mystical-tutor"
+    },
+    {
+     "name": "Fabricate",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/mrd-35.webp"
+     ],
+     "url": "https://scryfall.com/card/mrd/35/fabricate"
+    },
+    {
+     "name": "Scour for Scrap",
+     "mv": 4,
+     "cost": "{3}{U}",
+     "faces": [
+      "/assets/cards/eoe-73.webp"
+     ],
+     "url": "https://scryfall.com/card/eoe/73/scour-for-scrap"
+    },
+    {
+     "name": "Personal Tutor",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/por-64.webp"
+     ],
+     "url": "https://scryfall.com/card/por/64/personal-tutor"
+    },
+    {
+     "name": "Muddle the Mixture",
+     "mv": 2,
+     "cost": "{U}{U}",
+     "faces": [
+      "/assets/cards/rav-60.webp"
+     ],
+     "url": "https://scryfall.com/card/rav/60/muddle-the-mixture"
+    },
+    {
+     "name": "Drift of Phantasms",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/rav-46.webp"
+     ],
+     "url": "https://scryfall.com/card/rav/46/drift-of-phantasms"
+    },
+    {
+     "name": "Intuition",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/tmp-70.webp"
+     ],
+     "url": "https://scryfall.com/card/tmp/70/intuition"
+    },
+    {
+     "name": "Tezzeret, Cruel Captain",
+     "mv": 3,
+     "cost": "{3}",
+     "faces": [
+      "/assets/cards/eoe-2.webp"
+     ],
+     "url": "https://scryfall.com/card/eoe/2/tezzeret-cruel-captain"
+    },
+    {
+     "name": "Solve the Equation",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/stx-54.webp"
+     ],
+     "url": "https://scryfall.com/card/stx/54/solve-the-equation"
+    },
+    {
+     "name": "Spellseeker",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/bbd-41.webp"
+     ],
+     "url": "https://scryfall.com/card/bbd/41/spellseeker"
+    },
+    {
+     "name": "Trinket Mage",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/5dn-39.webp"
+     ],
+     "url": "https://scryfall.com/card/5dn/39/trinket-mage"
+    },
+    {
+     "name": "Tribute Mage",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/mh1-73.webp"
+     ],
+     "url": "https://scryfall.com/card/mh1/73/tribute-mage"
+    },
+    {
+     "name": "Trophy Mage",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/aer-48.webp"
+     ],
+     "url": "https://scryfall.com/card/aer/48/trophy-mage"
+    },
+    {
+     "name": "Transit Mage",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/dft-70.webp"
+     ],
+     "url": "https://scryfall.com/card/dft/70/transit-mage"
+    },
+    {
+     "name": "Treasure Mage",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/mbs-34.webp"
+     ],
+     "url": "https://scryfall.com/card/mbs/34/treasure-mage"
     }
    ]
   },
@@ -1089,70 +1069,42 @@
    "id": "recur",
    "name": "Recur",
    "short": "Re",
-   "subsections": [
+   "cards": [
     {
-     "label": "1",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Codex Shredder",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/rtr-228.webp"
-        ],
-        "url": "https://scryfall.com/card/rtr/228/codex-shredder"
-       }
-      ]
-     ]
+     "name": "Codex Shredder",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/rtr-228.webp"
+     ],
+     "url": "https://scryfall.com/card/rtr/228/codex-shredder"
     },
     {
-     "label": "2",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Snapcaster Mage",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/isd-78.webp"
-        ],
-        "url": "https://scryfall.com/card/isd/78/snapcaster-mage"
-       }
-      ]
-     ]
+     "name": "Snapcaster Mage",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/isd-78.webp"
+     ],
+     "url": "https://scryfall.com/card/isd/78/snapcaster-mage"
     },
     {
-     "label": "3",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Emry, Lurker of the Loch",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/eld-43.webp"
-        ],
-        "url": "https://scryfall.com/card/eld/43/emry-lurker-of-the-loch"
-       }
-      ]
-     ]
+     "name": "Emry, Lurker of the Loch",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/eld-43.webp"
+     ],
+     "url": "https://scryfall.com/card/eld/43/emry-lurker-of-the-loch"
     },
     {
-     "label": "4",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Archaeomancer",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/m13-41.webp"
-        ],
-        "url": "https://scryfall.com/card/m13/41/archaeomancer"
-       }
-      ]
-     ]
+     "name": "Archaeomancer",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/m13-41.webp"
+     ],
+     "url": "https://scryfall.com/card/m13/41/archaeomancer"
     }
    ]
   },
@@ -1160,214 +1112,186 @@
    "id": "utility",
    "name": "Utility",
    "short": "Ut",
-   "subsections": [
+   "cards": [
     {
-     "label": "1",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Essence Flux",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/soi-61.webp"
-        ],
-        "url": "https://scryfall.com/card/soi/61/essence-flux"
-       },
-       {
-        "name": "Three Steps Ahead",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/otj-75.webp"
-        ],
-        "url": "https://scryfall.com/card/otj/75/three-steps-ahead"
-       }
-      ]
-     ]
+     "name": "Essence Flux",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/soi-61.webp"
+     ],
+     "url": "https://scryfall.com/card/soi/61/essence-flux"
     },
     {
-     "label": "2",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Borne Upon a Wind",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/ltr-44.webp"
-        ],
-        "url": "https://scryfall.com/card/ltr/44/borne-upon-a-wind"
-       },
-       {
-        "name": "Phantasmal Image",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/m12-72.webp"
-        ],
-        "url": "https://scryfall.com/card/m12/72/phantasmal-image"
-       },
-       {
-        "name": "Imposter Mech",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/nec-13.webp"
-        ],
-        "url": "https://scryfall.com/card/nec/13/imposter-mech"
-       },
-       {
-        "name": "Teferi's Time Twist",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/war-72.webp"
-        ],
-        "url": "https://scryfall.com/card/war/72/teferis-time-twist"
-       },
-       {
-        "name": "Planar Incision",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/neo-72.webp"
-        ],
-        "url": "https://scryfall.com/card/neo/72/planar-incision"
-       },
-       {
-        "name": "Copy Artifact",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/lea-53.webp"
-        ],
-        "url": "https://scryfall.com/card/lea/53/copy-artifact"
-       }
-      ]
-     ]
+     "name": "Borne Upon a Wind",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/ltr-44.webp"
+     ],
+     "url": "https://scryfall.com/card/ltr/44/borne-upon-a-wind"
     },
     {
-     "label": "3",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Sculpting Steel",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mrd-238.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/238/sculpting-steel"
-       },
-       {
-        "name": "Copy Enchantment",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/rav-42.webp"
-        ],
-        "url": "https://scryfall.com/card/rav/42/copy-enchantment"
-       },
-       {
-        "name": "Mirrormade",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/eld-55.webp"
-        ],
-        "url": "https://scryfall.com/card/eld/55/mirrormade"
-       }
-      ]
-     ]
+     "name": "Sculpting Steel",
+     "mv": 3,
+     "cost": "{3}",
+     "faces": [
+      "/assets/cards/mrd-238.webp"
+     ],
+     "url": "https://scryfall.com/card/mrd/238/sculpting-steel"
     },
     {
-     "label": "4",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Leyline of Anticipation",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/m11-61.webp"
-        ],
-        "url": "https://scryfall.com/card/m11/61/leyline-of-anticipation"
-       },
-       {
-        "name": "Rite of Replication",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/zen-61.webp"
-        ],
-        "url": "https://scryfall.com/card/zen/61/rite-of-replication"
-       },
-       {
-        "name": "Clever Impersonator",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/ktk-34.webp"
-        ],
-        "url": "https://scryfall.com/card/ktk/34/clever-impersonator"
-       },
-       {
-        "name": "Flash Photography",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/fic-463.webp"
-        ],
-        "url": "https://scryfall.com/card/fic/463/flash-photography"
-       },
-       {
-        "name": "High Fae Trickster",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/fdn-40.webp"
-        ],
-        "url": "https://scryfall.com/card/fdn/40/high-fae-trickster"
-       }
-      ]
-     ]
+     "name": "Leyline of Anticipation",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/m11-61.webp"
+     ],
+     "url": "https://scryfall.com/card/m11/61/leyline-of-anticipation"
     },
     {
-     "label": "5",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Bribery",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/mmq-62.webp"
-        ],
-        "url": "https://scryfall.com/card/mmq/62/bribery"
-       },
-       {
-        "name": "Acquire",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/5dn-21.webp"
-        ],
-        "url": "https://scryfall.com/card/5dn/21/acquire"
-       },
-       {
-        "name": "Dream Halls",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/sth-28.webp"
-        ],
-        "url": "https://scryfall.com/card/sth/28/dream-halls"
-       }
-      ]
-     ]
+     "name": "Bribery",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/mmq-62.webp"
+     ],
+     "url": "https://scryfall.com/card/mmq/62/bribery"
     },
     {
-     "label": "6",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Sublime Epiphany",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/m21-74.webp"
-        ],
-        "url": "https://scryfall.com/card/m21/74/sublime-epiphany"
-       }
-      ]
-     ]
+     "name": "Sublime Epiphany",
+     "mv": 6,
+     "cost": "{4}{U}{U}",
+     "faces": [
+      "/assets/cards/m21-74.webp"
+     ],
+     "url": "https://scryfall.com/card/m21/74/sublime-epiphany"
+    },
+    {
+     "name": "Three Steps Ahead",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/otj-75.webp"
+     ],
+     "url": "https://scryfall.com/card/otj/75/three-steps-ahead"
+    },
+    {
+     "name": "Phantasmal Image",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/m12-72.webp"
+     ],
+     "url": "https://scryfall.com/card/m12/72/phantasmal-image"
+    },
+    {
+     "name": "Copy Enchantment",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/rav-42.webp"
+     ],
+     "url": "https://scryfall.com/card/rav/42/copy-enchantment"
+    },
+    {
+     "name": "Rite of Replication",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/zen-61.webp"
+     ],
+     "url": "https://scryfall.com/card/zen/61/rite-of-replication"
+    },
+    {
+     "name": "Acquire",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/5dn-21.webp"
+     ],
+     "url": "https://scryfall.com/card/5dn/21/acquire"
+    },
+    {
+     "name": "Imposter Mech",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/nec-13.webp"
+     ],
+     "url": "https://scryfall.com/card/nec/13/imposter-mech"
+    },
+    {
+     "name": "Mirrormade",
+     "mv": 3,
+     "cost": "{1}{U}{U}",
+     "faces": [
+      "/assets/cards/eld-55.webp"
+     ],
+     "url": "https://scryfall.com/card/eld/55/mirrormade"
+    },
+    {
+     "name": "Clever Impersonator",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/ktk-34.webp"
+     ],
+     "url": "https://scryfall.com/card/ktk/34/clever-impersonator"
+    },
+    {
+     "name": "Dream Halls",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/sth-28.webp"
+     ],
+     "url": "https://scryfall.com/card/sth/28/dream-halls"
+    },
+    {
+     "name": "Teferi's Time Twist",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/war-72.webp"
+     ],
+     "url": "https://scryfall.com/card/war/72/teferis-time-twist"
+    },
+    {
+     "name": "Flash Photography",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/fic-463.webp"
+     ],
+     "url": "https://scryfall.com/card/fic/463/flash-photography"
+    },
+    {
+     "name": "Planar Incision",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/neo-72.webp"
+     ],
+     "url": "https://scryfall.com/card/neo/72/planar-incision"
+    },
+    {
+     "name": "High Fae Trickster",
+     "mv": 4,
+     "cost": "{3}{U}",
+     "faces": [
+      "/assets/cards/fdn-40.webp"
+     ],
+     "url": "https://scryfall.com/card/fdn/40/high-fae-trickster"
+    },
+    {
+     "name": "Copy Artifact",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/lea-53.webp"
+     ],
+     "url": "https://scryfall.com/card/lea/53/copy-artifact"
     }
    ]
   },
@@ -1375,448 +1299,440 @@
    "id": "protection",
    "name": "Protection",
    "short": "Pr",
-   "subsections": [
+   "cards": [
     {
-     "label": "0",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Pact of Negation",
-        "mv": 0,
-        "faces": [
-         "/assets/cards/fut-42.webp"
-        ],
-        "url": "https://scryfall.com/card/fut/42/pact-of-negation"
-       }
-      ]
-     ]
+     "name": "Pact of Negation",
+     "mv": 0,
+     "cost": "{0}",
+     "faces": [
+      "/assets/cards/fut-42.webp"
+     ],
+     "url": "https://scryfall.com/card/fut/42/pact-of-negation"
     },
     {
-     "label": "1",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "An Offer You Can't Refuse",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/snc-51.webp"
-        ],
-        "url": "https://scryfall.com/card/snc/51/an-offer-you-cant-refuse"
-       },
-       {
-        "name": "Swan Song",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/ths-65.webp"
-        ],
-        "url": "https://scryfall.com/card/ths/65/swan-song"
-       },
-       {
-        "name": "Flusterstorm",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/cmd-46.webp"
-        ],
-        "url": "https://scryfall.com/card/cmd/46/flusterstorm"
-       },
-       {
-        "name": "Spell Pierce",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/zen-67.webp"
-        ],
-        "url": "https://scryfall.com/card/zen/67/spell-pierce"
-       },
-       {
-        "name": "Dispel",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/wwk-26.webp"
-        ],
-        "url": "https://scryfall.com/card/wwk/26/dispel"
-       },
-       {
-        "name": "Envelop",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/jud-39.webp"
-        ],
-        "url": "https://scryfall.com/card/jud/39/envelop"
-       },
-       {
-        "name": "Strix Serenade",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/mh3-71.webp"
-        ],
-        "url": "https://scryfall.com/card/mh3/71/strix-serenade"
-       },
-       {
-        "name": "Spell Snare",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/dis-33.webp"
-        ],
-        "url": "https://scryfall.com/card/dis/33/spell-snare"
-       },
-       {
-        "name": "Shore Up",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/dmu-64.webp"
-        ],
-        "url": "https://scryfall.com/card/dmu/64/shore-up"
-       },
-       {
-        "name": "Unsummon",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/lea-86.webp"
-        ],
-        "url": "https://scryfall.com/card/lea/86/unsummon"
-       },
-       {
-        "name": "Miscast",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/m21-57.webp"
-        ],
-        "url": "https://scryfall.com/card/m21/57/miscast"
-       },
-       {
-        "name": "Turn Aside",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/som-49.webp"
-        ],
-        "url": "https://scryfall.com/card/som/49/turn-aside"
-       },
-       {
-        "name": "Minor Misstep",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/one-64.webp"
-        ],
-        "url": "https://scryfall.com/card/one/64/minor-misstep"
-       }
-      ]
-     ]
+     "name": "An Offer You Can't Refuse",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/snc-51.webp"
+     ],
+     "url": "https://scryfall.com/card/snc/51/an-offer-you-cant-refuse"
     },
     {
-     "label": "2",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Lightning Greaves",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/mrd-199.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/199/lightning-greaves"
-       },
-       {
-        "name": "Spellskite",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/nph-159.webp"
-        ],
-        "url": "https://scryfall.com/card/nph/159/spellskite"
-       },
-       {
-        "name": "Arcane Denial",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/all-22a.webp"
-        ],
-        "url": "https://scryfall.com/card/all/22a/arcane-denial"
-       },
-       {
-        "name": "Negate",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/mor-43.webp"
-        ],
-        "url": "https://scryfall.com/card/mor/43/negate"
-       },
-       {
-        "name": "Delay",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/fut-35.webp"
-        ],
-        "url": "https://scryfall.com/card/fut/35/delay"
-       },
-       {
-        "name": "Disdainful Stroke",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/ktk-37.webp"
-        ],
-        "url": "https://scryfall.com/card/ktk/37/disdainful-stroke"
-       },
-       {
-        "name": "Essence Scatter",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/m10-51.webp"
-        ],
-        "url": "https://scryfall.com/card/m10/51/essence-scatter"
-       },
-       {
-        "name": "Spider-Sense",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/spm-46.webp"
-        ],
-        "url": "https://scryfall.com/card/spm/46/spider-sense"
-       },
-       {
-        "name": "Lazotep Plating",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/war-59.webp"
-        ],
-        "url": "https://scryfall.com/card/war/59/lazotep-plating"
-       },
-       {
-        "name": "Daze",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/nem-30.webp"
-        ],
-        "url": "https://scryfall.com/card/nem/30/daze"
-       },
-       {
-        "name": "Highly Illogical",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/trk-62.webp"
-        ],
-        "url": "https://scryfall.com/card/trk/62/highly-illogical"
-       }
-      ]
-     ]
+     "name": "Lightning Greaves",
+     "mv": 2,
+     "cost": "{2}",
+     "faces": [
+      "/assets/cards/mrd-199.webp"
+     ],
+     "url": "https://scryfall.com/card/mrd/199/lightning-greaves"
     },
     {
-     "label": "3",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Fierce Guardianship",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/c20-35.webp"
-        ],
-        "url": "https://scryfall.com/card/c20/35/fierce-guardianship"
-       },
-       {
-        "name": "Force of Negation",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mh1-52.webp"
-        ],
-        "url": "https://scryfall.com/card/mh1/52/force-of-negation"
-       },
-       {
-        "name": "Archmage's Charm",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mh1-40.webp"
-        ],
-        "url": "https://scryfall.com/card/mh1/40/archmages-charm"
-       },
-       {
-        "name": "Hydroelectric Specimen // Hydroelectric Laboratory",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mh3-240-1.webp",
-         "/assets/cards/mh3-240-2.webp"
-        ],
-        "url": "https://scryfall.com/card/mh3/240/hydroelectric-specimen-hydroelectric-laboratory"
-       },
-       {
-        "name": "Unwind",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/dom-72.webp"
-        ],
-        "url": "https://scryfall.com/card/dom/72/unwind"
-       },
-       {
-        "name": "Sink into Stupor // Soporific Springs",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mh3-241-1.webp",
-         "/assets/cards/mh3-241-2.webp"
-        ],
-        "url": "https://scryfall.com/card/mh3/241/sink-into-stupor-soporific-springs"
-       },
-       {
-        "name": "Flare of Denial",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mh3-62.webp"
-        ],
-        "url": "https://scryfall.com/card/mh3/62/flare-of-denial"
-       },
-       {
-        "name": "Disallow",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/aer-31.webp"
-        ],
-        "url": "https://scryfall.com/card/aer/31/disallow"
-       },
-       {
-        "name": "Cancel",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/tsp-51.webp"
-        ],
-        "url": "https://scryfall.com/card/tsp/51/cancel"
-       },
-       {
-        "name": "Dissolve",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/ths-47.webp"
-        ],
-        "url": "https://scryfall.com/card/ths/47/dissolve"
-       },
-       {
-        "name": "Forbid",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/exo-35.webp"
-        ],
-        "url": "https://scryfall.com/card/exo/35/forbid"
-       }
-      ]
-     ]
+     "name": "Fierce Guardianship",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/c20-35.webp"
+     ],
+     "url": "https://scryfall.com/card/c20/35/fierce-guardianship"
     },
     {
-     "label": "4",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Cryptic Command",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/lrw-56.webp"
-        ],
-        "url": "https://scryfall.com/card/lrw/56/cryptic-command"
-       },
-       {
-        "name": "Foil",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/pcy-34.webp"
-        ],
-        "url": "https://scryfall.com/card/pcy/34/foil"
-       },
-       {
-        "name": "Mindbreak Trap",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/zen-57.webp"
-        ],
-        "url": "https://scryfall.com/card/zen/57/mindbreak-trap"
-       },
-       {
-        "name": "Rewind",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/usg-93.webp"
-        ],
-        "url": "https://scryfall.com/card/usg/93/rewind"
-       },
-       {
-        "name": "Summary Dismissal",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/emn-75.webp"
-        ],
-        "url": "https://scryfall.com/card/emn/75/summary-dismissal"
-       },
-       {
-        "name": "Dismiss",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/tmp-58.webp"
-        ],
-        "url": "https://scryfall.com/card/tmp/58/dismiss"
-       }
-      ]
-     ]
+     "name": "Cryptic Command",
+     "mv": 4,
+     "cost": "{1}{U}{U}{U}",
+     "faces": [
+      "/assets/cards/lrw-56.webp"
+     ],
+     "url": "https://scryfall.com/card/lrw/56/cryptic-command"
     },
     {
-     "label": "5",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Force of Will",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/all-28.webp"
-        ],
-        "url": "https://scryfall.com/card/all/28/force-of-will"
-       },
-       {
-        "name": "Mystic Confluence",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/c15-14.webp"
-        ],
-        "url": "https://scryfall.com/card/c15/14/mystic-confluence"
-       },
-       {
-        "name": "Misdirection",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/mmq-87.webp"
-        ],
-        "url": "https://scryfall.com/card/mmq/87/misdirection"
-       },
-       {
-        "name": "The Unagi of Kyoshi Island",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/tla-77.webp"
-        ],
-        "url": "https://scryfall.com/card/tla/77/the-unagi-of-kyoshi-island"
-       },
-       {
-        "name": "Spell Swindle",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/xln-82.webp"
-        ],
-        "url": "https://scryfall.com/card/xln/82/spell-swindle"
-       }
-      ]
-     ]
+     "name": "Force of Will",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/all-28.webp"
+     ],
+     "url": "https://scryfall.com/card/all/28/force-of-will"
     },
     {
-     "label": "6",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Time Stop",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/chk-97.webp"
-        ],
-        "url": "https://scryfall.com/card/chk/97/time-stop"
-       }
-      ]
-     ]
+     "name": "Time Stop",
+     "mv": 6,
+     "cost": "{4}{U}{U}",
+     "faces": [
+      "/assets/cards/chk-97.webp"
+     ],
+     "url": "https://scryfall.com/card/chk/97/time-stop"
+    },
+    {
+     "name": "Swan Song",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/ths-65.webp"
+     ],
+     "url": "https://scryfall.com/card/ths/65/swan-song"
+    },
+    {
+     "name": "Spellskite",
+     "mv": 2,
+     "cost": "{2}",
+     "faces": [
+      "/assets/cards/nph-159.webp"
+     ],
+     "url": "https://scryfall.com/card/nph/159/spellskite"
+    },
+    {
+     "name": "Force of Negation",
+     "mv": 3,
+     "cost": "{1}{U}{U}",
+     "faces": [
+      "/assets/cards/mh1-52.webp"
+     ],
+     "url": "https://scryfall.com/card/mh1/52/force-of-negation"
+    },
+    {
+     "name": "Foil",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/pcy-34.webp"
+     ],
+     "url": "https://scryfall.com/card/pcy/34/foil"
+    },
+    {
+     "name": "Mystic Confluence",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/c15-14.webp"
+     ],
+     "url": "https://scryfall.com/card/c15/14/mystic-confluence"
+    },
+    {
+     "name": "Flusterstorm",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/cmd-46.webp"
+     ],
+     "url": "https://scryfall.com/card/cmd/46/flusterstorm"
+    },
+    {
+     "name": "Arcane Denial",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/all-22a.webp"
+     ],
+     "url": "https://scryfall.com/card/all/22a/arcane-denial"
+    },
+    {
+     "name": "Archmage's Charm",
+     "mv": 3,
+     "cost": "{U}{U}{U}",
+     "faces": [
+      "/assets/cards/mh1-40.webp"
+     ],
+     "url": "https://scryfall.com/card/mh1/40/archmages-charm"
+    },
+    {
+     "name": "Mindbreak Trap",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/zen-57.webp"
+     ],
+     "url": "https://scryfall.com/card/zen/57/mindbreak-trap"
+    },
+    {
+     "name": "Misdirection",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/mmq-87.webp"
+     ],
+     "url": "https://scryfall.com/card/mmq/87/misdirection"
+    },
+    {
+     "name": "Spell Pierce",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/zen-67.webp"
+     ],
+     "url": "https://scryfall.com/card/zen/67/spell-pierce"
+    },
+    {
+     "name": "Negate",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/mor-43.webp"
+     ],
+     "url": "https://scryfall.com/card/mor/43/negate"
+    },
+    {
+     "name": "Hydroelectric Specimen // Hydroelectric Laboratory",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/mh3-240-1.webp",
+      "/assets/cards/mh3-240-2.webp"
+     ],
+     "url": "https://scryfall.com/card/mh3/240/hydroelectric-specimen-hydroelectric-laboratory"
+    },
+    {
+     "name": "Rewind",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/usg-93.webp"
+     ],
+     "url": "https://scryfall.com/card/usg/93/rewind"
+    },
+    {
+     "name": "The Unagi of Kyoshi Island",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/tla-77.webp"
+     ],
+     "url": "https://scryfall.com/card/tla/77/the-unagi-of-kyoshi-island"
+    },
+    {
+     "name": "Dispel",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/wwk-26.webp"
+     ],
+     "url": "https://scryfall.com/card/wwk/26/dispel"
+    },
+    {
+     "name": "Delay",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/fut-35.webp"
+     ],
+     "url": "https://scryfall.com/card/fut/35/delay"
+    },
+    {
+     "name": "Unwind",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/dom-72.webp"
+     ],
+     "url": "https://scryfall.com/card/dom/72/unwind"
+    },
+    {
+     "name": "Summary Dismissal",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/emn-75.webp"
+     ],
+     "url": "https://scryfall.com/card/emn/75/summary-dismissal"
+    },
+    {
+     "name": "Spell Swindle",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/xln-82.webp"
+     ],
+     "url": "https://scryfall.com/card/xln/82/spell-swindle"
+    },
+    {
+     "name": "Envelop",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/jud-39.webp"
+     ],
+     "url": "https://scryfall.com/card/jud/39/envelop"
+    },
+    {
+     "name": "Disdainful Stroke",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/ktk-37.webp"
+     ],
+     "url": "https://scryfall.com/card/ktk/37/disdainful-stroke"
+    },
+    {
+     "name": "Sink into Stupor // Soporific Springs",
+     "mv": 3,
+     "cost": "{1}{U}{U}",
+     "faces": [
+      "/assets/cards/mh3-241-1.webp",
+      "/assets/cards/mh3-241-2.webp"
+     ],
+     "url": "https://scryfall.com/card/mh3/241/sink-into-stupor-soporific-springs"
+    },
+    {
+     "name": "Dismiss",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/tmp-58.webp"
+     ],
+     "url": "https://scryfall.com/card/tmp/58/dismiss"
+    },
+    {
+     "name": "Strix Serenade",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/mh3-71.webp"
+     ],
+     "url": "https://scryfall.com/card/mh3/71/strix-serenade"
+    },
+    {
+     "name": "Essence Scatter",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/m10-51.webp"
+     ],
+     "url": "https://scryfall.com/card/m10/51/essence-scatter"
+    },
+    {
+     "name": "Flare of Denial",
+     "mv": 3,
+     "cost": "{1}{U}{U}",
+     "faces": [
+      "/assets/cards/mh3-62.webp"
+     ],
+     "url": "https://scryfall.com/card/mh3/62/flare-of-denial"
+    },
+    {
+     "name": "Spell Snare",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/dis-33.webp"
+     ],
+     "url": "https://scryfall.com/card/dis/33/spell-snare"
+    },
+    {
+     "name": "Spider-Sense",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/spm-46.webp"
+     ],
+     "url": "https://scryfall.com/card/spm/46/spider-sense"
+    },
+    {
+     "name": "Disallow",
+     "mv": 3,
+     "cost": "{1}{U}{U}",
+     "faces": [
+      "/assets/cards/aer-31.webp"
+     ],
+     "url": "https://scryfall.com/card/aer/31/disallow"
+    },
+    {
+     "name": "Shore Up",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/dmu-64.webp"
+     ],
+     "url": "https://scryfall.com/card/dmu/64/shore-up"
+    },
+    {
+     "name": "Lazotep Plating",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/war-59.webp"
+     ],
+     "url": "https://scryfall.com/card/war/59/lazotep-plating"
+    },
+    {
+     "name": "Cancel",
+     "mv": 3,
+     "cost": "{1}{U}{U}",
+     "faces": [
+      "/assets/cards/tsp-51.webp"
+     ],
+     "url": "https://scryfall.com/card/tsp/51/cancel"
+    },
+    {
+     "name": "Unsummon",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/lea-86.webp"
+     ],
+     "url": "https://scryfall.com/card/lea/86/unsummon"
+    },
+    {
+     "name": "Daze",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/nem-30.webp"
+     ],
+     "url": "https://scryfall.com/card/nem/30/daze"
+    },
+    {
+     "name": "Dissolve",
+     "mv": 3,
+     "cost": "{1}{U}{U}",
+     "faces": [
+      "/assets/cards/ths-47.webp"
+     ],
+     "url": "https://scryfall.com/card/ths/47/dissolve"
+    },
+    {
+     "name": "Miscast",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/m21-57.webp"
+     ],
+     "url": "https://scryfall.com/card/m21/57/miscast"
+    },
+    {
+     "name": "Highly Illogical",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/trk-62.webp"
+     ],
+     "url": "https://scryfall.com/card/trk/62/highly-illogical"
+    },
+    {
+     "name": "Forbid",
+     "mv": 3,
+     "cost": "{1}{U}{U}",
+     "faces": [
+      "/assets/cards/exo-35.webp"
+     ],
+     "url": "https://scryfall.com/card/exo/35/forbid"
+    },
+    {
+     "name": "Turn Aside",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/som-49.webp"
+     ],
+     "url": "https://scryfall.com/card/som/49/turn-aside"
+    },
+    {
+     "name": "Minor Misstep",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/one-64.webp"
+     ],
+     "url": "https://scryfall.com/card/one/64/minor-misstep"
     }
    ]
   },
@@ -1824,502 +1740,501 @@
    "id": "answers",
    "name": "Answers",
    "short": "An",
-   "subsections": [
+   "cards": [
     {
-     "label": "0",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Slaughter Pact",
-        "mv": 0,
-        "faces": [
-         "/assets/cards/fut-78.webp"
-        ],
-        "url": "https://scryfall.com/card/fut/78/slaughter-pact"
-       },
-       {
-        "name": "Tormod's Crypt",
-        "mv": 0,
-        "faces": [
-         "/assets/cards/drk-112.webp"
-        ],
-        "url": "https://scryfall.com/card/drk/112/tormods-crypt"
-       }
-      ]
-     ]
+     "name": "Slaughter Pact",
+     "mv": 0,
+     "cost": "{0}",
+     "faces": [
+      "/assets/cards/fut-78.webp"
+     ],
+     "url": "https://scryfall.com/card/fut/78/slaughter-pact"
     },
     {
-     "label": "1",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Vexing Bauble",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/mh3-212.webp"
-        ],
-        "url": "https://scryfall.com/card/mh3/212/vexing-bauble"
-       },
-       {
-        "name": "Soul-Guide Lantern",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/thb-237.webp"
-        ],
-        "url": "https://scryfall.com/card/thb/237/soul-guide-lantern"
-       },
-       {
-        "name": "Grafdigger's Cage",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/dka-149.webp"
-        ],
-        "url": "https://scryfall.com/card/dka/149/grafdiggers-cage"
-       },
-       {
-        "name": "Aether Spellbomb",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/mrd-141.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/141/aether-spellbomb"
-       },
-       {
-        "name": "Meekstone",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/lea-260.webp"
-        ],
-        "url": "https://scryfall.com/card/lea/260/meekstone"
-       },
-       {
-        "name": "Pithing Needle",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/sok-158.webp"
-        ],
-        "url": "https://scryfall.com/card/sok/158/pithing-needle"
-       },
-       {
-        "name": "Gerrard's Hourglass Pendant",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/dmc-17.webp"
-        ],
-        "url": "https://scryfall.com/card/dmc/17/gerrards-hourglass-pendant"
-       },
-       {
-        "name": "Feldon's Cane",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/atq-50.webp"
-        ],
-        "url": "https://scryfall.com/card/atq/50/feldons-cane"
-       },
-       {
-        "name": "Pongify",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/plc-44.webp"
-        ],
-        "url": "https://scryfall.com/card/plc/44/pongify"
-       },
-       {
-        "name": "Rapid Hybridization",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/gtc-44.webp"
-        ],
-        "url": "https://scryfall.com/card/gtc/44/rapid-hybridization"
-       },
-       {
-        "name": "Into the Flood Maw",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/blb-52.webp"
-        ],
-        "url": "https://scryfall.com/card/blb/52/into-the-flood-maw"
-       },
-       {
-        "name": "Chain of Vapor",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/ons-73.webp"
-        ],
-        "url": "https://scryfall.com/card/ons/73/chain-of-vapor"
-       },
-       {
-        "name": "Slip Out the Back",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/snc-62.webp"
-        ],
-        "url": "https://scryfall.com/card/snc/62/slip-out-the-back"
-       },
-       {
-        "name": "Wash Away",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/vow-87.webp"
-        ],
-        "url": "https://scryfall.com/card/vow/87/wash-away"
-       },
-       {
-        "name": "Unable to Scream",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/dsk-78.webp"
-        ],
-        "url": "https://scryfall.com/card/dsk/78/unable-to-scream"
-       },
-       {
-        "name": "Annul",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/usg-59.webp"
-        ],
-        "url": "https://scryfall.com/card/usg/59/annul"
-       },
-       {
-        "name": "Stifle",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/scg-52.webp"
-        ],
-        "url": "https://scryfall.com/card/scg/52/stifle"
-       }
-      ]
-     ]
+     "name": "Vexing Bauble",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/mh3-212.webp"
+     ],
+     "url": "https://scryfall.com/card/mh3/212/vexing-bauble"
     },
     {
-     "label": "2",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Cursed Totem",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/mir-299.webp"
-        ],
-        "url": "https://scryfall.com/card/mir/299/cursed-totem"
-       },
-       {
-        "name": "Torpor Orb",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/nph-162.webp"
-        ],
-        "url": "https://scryfall.com/card/nph/162/torpor-orb"
-       },
-       {
-        "name": "Phyrexian Revoker",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/mbs-122.webp"
-        ],
-        "url": "https://scryfall.com/card/mbs/122/phyrexian-revoker"
-       },
-       {
-        "name": "Cyclonic Rift",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/rtr-35.webp"
-        ],
-        "url": "https://scryfall.com/card/rtr/35/cyclonic-rift"
-       },
-       {
-        "name": "Snap",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/ulg-43.webp"
-        ],
-        "url": "https://scryfall.com/card/ulg/43/snap"
-       },
-       {
-        "name": "Reality Shift",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/frf-46.webp"
-        ],
-        "url": "https://scryfall.com/card/frf/46/reality-shift"
-       },
-       {
-        "name": "Resculpt",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/stx-51.webp"
-        ],
-        "url": "https://scryfall.com/card/stx/51/resculpt"
-       },
-       {
-        "name": "Volatile Stormdrake",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/mh3-79.webp"
-        ],
-        "url": "https://scryfall.com/card/mh3/79/volatile-stormdrake"
-       },
-       {
-        "name": "Gilded Drake",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/usg-76.webp"
-        ],
-        "url": "https://scryfall.com/card/usg/76/gilded-drake"
-       },
-       {
-        "name": "Snapback",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/tsp-78.webp"
-        ],
-        "url": "https://scryfall.com/card/tsp/78/snapback"
-       },
-       {
-        "name": "Dress Down",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/mh2-39.webp"
-        ],
-        "url": "https://scryfall.com/card/mh2/39/dress-down"
-       },
-       {
-        "name": "Frogify",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/eld-47.webp"
-        ],
-        "url": "https://scryfall.com/card/eld/47/frogify"
-       },
-       {
-        "name": "Tale's End",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/m20-77.webp"
-        ],
-        "url": "https://scryfall.com/card/m20/77/tales-end"
-       },
-       {
-        "name": "Trickbind",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/tsp-88.webp"
-        ],
-        "url": "https://scryfall.com/card/tsp/88/trickbind"
-       }
-      ]
-     ]
+     "name": "Cursed Totem",
+     "mv": 2,
+     "cost": "{2}",
+     "faces": [
+      "/assets/cards/mir-299.webp"
+     ],
+     "url": "https://scryfall.com/card/mir/299/cursed-totem"
     },
     {
-     "label": "3",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Imprisoned in the Moon",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/emn-65.webp"
-        ],
-        "url": "https://scryfall.com/card/emn/65/imprisoned-in-the-moon"
-       },
-       {
-        "name": "Amphibian Downpour",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mh3-51.webp"
-        ],
-        "url": "https://scryfall.com/card/mh3/51/amphibian-downpour"
-       },
-       {
-        "name": "Ravenform",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/khm-72.webp"
-        ],
-        "url": "https://scryfall.com/card/khm/72/ravenform"
-       },
-       {
-        "name": "Filter Out",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mat-7.webp"
-        ],
-        "url": "https://scryfall.com/card/mat/7/filter-out"
-       },
-       {
-        "name": "Capsize",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/tmp-55.webp"
-        ],
-        "url": "https://scryfall.com/card/tmp/55/capsize"
-       }
-      ]
-     ]
+     "name": "Nevinyrral's Disk",
+     "mv": 4,
+     "cost": "{4}",
+     "faces": [
+      "/assets/cards/lea-266.webp"
+     ],
+     "url": "https://scryfall.com/card/lea/266/nevinyrrals-disk"
     },
     {
-     "label": "4",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Nevinyrral's Disk",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/lea-266.webp"
-        ],
-        "url": "https://scryfall.com/card/lea/266/nevinyrrals-disk"
-       },
-       {
-        "name": "Desynchronization",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/acr-16.webp"
-        ],
-        "url": "https://scryfall.com/card/acr/16/desynchronization"
-       },
-       {
-        "name": "Venser, Shaper Savant",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/fut-46.webp"
-        ],
-        "url": "https://scryfall.com/card/fut/46/venser-shaper-savant"
-       },
-       {
-        "name": "Whelming Wave",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/bng-57.webp"
-        ],
-        "url": "https://scryfall.com/card/bng/57/whelming-wave"
-       },
-       {
-        "name": "Sower of Temptation",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/lrw-88.webp"
-        ],
-        "url": "https://scryfall.com/card/lrw/88/sower-of-temptation"
-       },
-       {
-        "name": "Control Magic",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/lea-52.webp"
-        ],
-        "url": "https://scryfall.com/card/lea/52/control-magic"
-       },
-       {
-        "name": "Aetherize",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/gtc-29.webp"
-        ],
-        "url": "https://scryfall.com/card/gtc/29/aetherize"
-       }
-      ]
-     ]
+     "name": "Desynchronization",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/acr-16.webp"
+     ],
+     "url": "https://scryfall.com/card/acr/16/desynchronization"
     },
     {
-     "label": "5",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Submerge",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/nem-48.webp"
-        ],
-        "url": "https://scryfall.com/card/nem/48/submerge"
-       },
-       {
-        "name": "Raise the Palisade",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/ltc-23.webp"
-        ],
-        "url": "https://scryfall.com/card/ltc/23/raise-the-palisade"
-       },
-       {
-        "name": "Evacuation",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/sth-30.webp"
-        ],
-        "url": "https://scryfall.com/card/sth/30/evacuation"
-       },
-       {
-        "name": "Perplexing Test",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/c21-30.webp"
-        ],
-        "url": "https://scryfall.com/card/c21/30/perplexing-test"
-       },
-       {
-        "name": "Aetherspouts",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/m15-44.webp"
-        ],
-        "url": "https://scryfall.com/card/m15/44/aetherspouts"
-       },
-       {
-        "name": "Aether Gale",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/c14-11.webp"
-        ],
-        "url": "https://scryfall.com/card/c14/11/aether-gale"
-       },
-       {
-        "name": "Devastation Tide",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/avr-48.webp"
-        ],
-        "url": "https://scryfall.com/card/avr/48/devastation-tide"
-       },
-       {
-        "name": "Desertion",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/vis-30.webp"
-        ],
-        "url": "https://scryfall.com/card/vis/30/desertion"
-       }
-      ]
-     ]
+     "name": "Submerge",
+     "mv": 5,
+     "cost": "{4}{U}",
+     "faces": [
+      "/assets/cards/nem-48.webp"
+     ],
+     "url": "https://scryfall.com/card/nem/48/submerge"
     },
     {
-     "label": "6",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Duplicant",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/mrd-165.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/165/duplicant"
-       },
-       {
-        "name": "U.S.S. Defiant, Tough Little Ship",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/trc-125.webp"
-        ],
-        "url": "https://scryfall.com/card/trc/125/uss-defiant-tough-little-ship"
-       }
-      ]
-     ]
+     "name": "Duplicant",
+     "mv": 6,
+     "cost": "{6}",
+     "faces": [
+      "/assets/cards/mrd-165.webp"
+     ],
+     "url": "https://scryfall.com/card/mrd/165/duplicant"
+    },
+    {
+     "name": "Tormod's Crypt",
+     "mv": 0,
+     "cost": "{0}",
+     "faces": [
+      "/assets/cards/drk-112.webp"
+     ],
+     "url": "https://scryfall.com/card/drk/112/tormods-crypt"
+    },
+    {
+     "name": "Soul-Guide Lantern",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/thb-237.webp"
+     ],
+     "url": "https://scryfall.com/card/thb/237/soul-guide-lantern"
+    },
+    {
+     "name": "Torpor Orb",
+     "mv": 2,
+     "cost": "{2}",
+     "faces": [
+      "/assets/cards/nph-162.webp"
+     ],
+     "url": "https://scryfall.com/card/nph/162/torpor-orb"
+    },
+    {
+     "name": "Imprisoned in the Moon",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/emn-65.webp"
+     ],
+     "url": "https://scryfall.com/card/emn/65/imprisoned-in-the-moon"
+    },
+    {
+     "name": "Venser, Shaper Savant",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/fut-46.webp"
+     ],
+     "url": "https://scryfall.com/card/fut/46/venser-shaper-savant"
+    },
+    {
+     "name": "Raise the Palisade",
+     "mv": 5,
+     "cost": "{4}{U}",
+     "faces": [
+      "/assets/cards/ltc-23.webp"
+     ],
+     "url": "https://scryfall.com/card/ltc/23/raise-the-palisade"
+    },
+    {
+     "name": "U.S.S. Defiant, Tough Little Ship",
+     "mv": 6,
+     "cost": "{6}",
+     "faces": [
+      "/assets/cards/trc-125.webp"
+     ],
+     "url": "https://scryfall.com/card/trc/125/uss-defiant-tough-little-ship"
+    },
+    {
+     "name": "Grafdigger's Cage",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/dka-149.webp"
+     ],
+     "url": "https://scryfall.com/card/dka/149/grafdiggers-cage"
+    },
+    {
+     "name": "Phyrexian Revoker",
+     "mv": 2,
+     "cost": "{2}",
+     "faces": [
+      "/assets/cards/mbs-122.webp"
+     ],
+     "url": "https://scryfall.com/card/mbs/122/phyrexian-revoker"
+    },
+    {
+     "name": "Amphibian Downpour",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/mh3-51.webp"
+     ],
+     "url": "https://scryfall.com/card/mh3/51/amphibian-downpour"
+    },
+    {
+     "name": "Whelming Wave",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/bng-57.webp"
+     ],
+     "url": "https://scryfall.com/card/bng/57/whelming-wave"
+    },
+    {
+     "name": "Evacuation",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/sth-30.webp"
+     ],
+     "url": "https://scryfall.com/card/sth/30/evacuation"
+    },
+    {
+     "name": "Aether Spellbomb",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/mrd-141.webp"
+     ],
+     "url": "https://scryfall.com/card/mrd/141/aether-spellbomb"
+    },
+    {
+     "name": "Cyclonic Rift",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/rtr-35.webp"
+     ],
+     "url": "https://scryfall.com/card/rtr/35/cyclonic-rift"
+    },
+    {
+     "name": "Ravenform",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/khm-72.webp"
+     ],
+     "url": "https://scryfall.com/card/khm/72/ravenform"
+    },
+    {
+     "name": "Sower of Temptation",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/lrw-88.webp"
+     ],
+     "url": "https://scryfall.com/card/lrw/88/sower-of-temptation"
+    },
+    {
+     "name": "Perplexing Test",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/c21-30.webp"
+     ],
+     "url": "https://scryfall.com/card/c21/30/perplexing-test"
+    },
+    {
+     "name": "Meekstone",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/lea-260.webp"
+     ],
+     "url": "https://scryfall.com/card/lea/260/meekstone"
+    },
+    {
+     "name": "Snap",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/ulg-43.webp"
+     ],
+     "url": "https://scryfall.com/card/ulg/43/snap"
+    },
+    {
+     "name": "Filter Out",
+     "mv": 3,
+     "cost": "{1}{U}{U}",
+     "faces": [
+      "/assets/cards/mat-7.webp"
+     ],
+     "url": "https://scryfall.com/card/mat/7/filter-out"
+    },
+    {
+     "name": "Control Magic",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/lea-52.webp"
+     ],
+     "url": "https://scryfall.com/card/lea/52/control-magic"
+    },
+    {
+     "name": "Aetherspouts",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/m15-44.webp"
+     ],
+     "url": "https://scryfall.com/card/m15/44/aetherspouts"
+    },
+    {
+     "name": "Pithing Needle",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/sok-158.webp"
+     ],
+     "url": "https://scryfall.com/card/sok/158/pithing-needle"
+    },
+    {
+     "name": "Reality Shift",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/frf-46.webp"
+     ],
+     "url": "https://scryfall.com/card/frf/46/reality-shift"
+    },
+    {
+     "name": "Capsize",
+     "mv": 3,
+     "cost": "{1}{U}{U}",
+     "faces": [
+      "/assets/cards/tmp-55.webp"
+     ],
+     "url": "https://scryfall.com/card/tmp/55/capsize"
+    },
+    {
+     "name": "Aetherize",
+     "mv": 4,
+     "cost": "{3}{U}",
+     "faces": [
+      "/assets/cards/gtc-29.webp"
+     ],
+     "url": "https://scryfall.com/card/gtc/29/aetherize"
+    },
+    {
+     "name": "Aether Gale",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/c14-11.webp"
+     ],
+     "url": "https://scryfall.com/card/c14/11/aether-gale"
+    },
+    {
+     "name": "Gerrard's Hourglass Pendant",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/dmc-17.webp"
+     ],
+     "url": "https://scryfall.com/card/dmc/17/gerrards-hourglass-pendant"
+    },
+    {
+     "name": "Resculpt",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/stx-51.webp"
+     ],
+     "url": "https://scryfall.com/card/stx/51/resculpt"
+    },
+    {
+     "name": "Devastation Tide",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/avr-48.webp"
+     ],
+     "url": "https://scryfall.com/card/avr/48/devastation-tide"
+    },
+    {
+     "name": "Feldon's Cane",
+     "mv": 1,
+     "cost": "{1}",
+     "faces": [
+      "/assets/cards/atq-50.webp"
+     ],
+     "url": "https://scryfall.com/card/atq/50/feldons-cane"
+    },
+    {
+     "name": "Volatile Stormdrake",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/mh3-79.webp"
+     ],
+     "url": "https://scryfall.com/card/mh3/79/volatile-stormdrake"
+    },
+    {
+     "name": "Desertion",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/vis-30.webp"
+     ],
+     "url": "https://scryfall.com/card/vis/30/desertion"
+    },
+    {
+     "name": "Pongify",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/plc-44.webp"
+     ],
+     "url": "https://scryfall.com/card/plc/44/pongify"
+    },
+    {
+     "name": "Gilded Drake",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/usg-76.webp"
+     ],
+     "url": "https://scryfall.com/card/usg/76/gilded-drake"
+    },
+    {
+     "name": "Rapid Hybridization",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/gtc-44.webp"
+     ],
+     "url": "https://scryfall.com/card/gtc/44/rapid-hybridization"
+    },
+    {
+     "name": "Snapback",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/tsp-78.webp"
+     ],
+     "url": "https://scryfall.com/card/tsp/78/snapback"
+    },
+    {
+     "name": "Into the Flood Maw",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/blb-52.webp"
+     ],
+     "url": "https://scryfall.com/card/blb/52/into-the-flood-maw"
+    },
+    {
+     "name": "Dress Down",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/mh2-39.webp"
+     ],
+     "url": "https://scryfall.com/card/mh2/39/dress-down"
+    },
+    {
+     "name": "Chain of Vapor",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/ons-73.webp"
+     ],
+     "url": "https://scryfall.com/card/ons/73/chain-of-vapor"
+    },
+    {
+     "name": "Frogify",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/eld-47.webp"
+     ],
+     "url": "https://scryfall.com/card/eld/47/frogify"
+    },
+    {
+     "name": "Slip Out the Back",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/snc-62.webp"
+     ],
+     "url": "https://scryfall.com/card/snc/62/slip-out-the-back"
+    },
+    {
+     "name": "Tale's End",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/m20-77.webp"
+     ],
+     "url": "https://scryfall.com/card/m20/77/tales-end"
+    },
+    {
+     "name": "Wash Away",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/vow-87.webp"
+     ],
+     "url": "https://scryfall.com/card/vow/87/wash-away"
+    },
+    {
+     "name": "Trickbind",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/tsp-88.webp"
+     ],
+     "url": "https://scryfall.com/card/tsp/88/trickbind"
+    },
+    {
+     "name": "Unable to Scream",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/dsk-78.webp"
+     ],
+     "url": "https://scryfall.com/card/dsk/78/unable-to-scream"
+    },
+    {
+     "name": "Annul",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/usg-59.webp"
+     ],
+     "url": "https://scryfall.com/card/usg/59/annul"
+    },
+    {
+     "name": "Stifle",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/scg-52.webp"
+     ],
+     "url": "https://scryfall.com/card/scg/52/stifle"
     }
    ]
   },
@@ -2327,512 +2242,514 @@
    "id": "flashback",
    "name": "Flashback",
    "short": "Fb",
-   "subsections": [
+   "cards": [
     {
-     "label": "1",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Otherworldly Gaze",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/mid-67.webp"
-        ],
-        "url": "https://scryfall.com/card/mid/67/otherworldly-gaze"
-       },
-       {
-        "name": "Secrets of the Key",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/mid-73.webp"
-        ],
-        "url": "https://scryfall.com/card/mid/73/secrets-of-the-key"
-       },
-       {
-        "name": "Silent Departure",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/isd-75.webp"
-        ],
-        "url": "https://scryfall.com/card/isd/75/silent-departure"
-       }
-      ]
-     ]
+     "name": "Otherworldly Gaze",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/mid-67.webp"
+     ],
+     "url": "https://scryfall.com/card/mid/67/otherworldly-gaze"
     },
     {
-     "label": "2",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Dreams of Laguna",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/fin-50.webp"
-        ],
-        "url": "https://scryfall.com/card/fin/50/dreams-of-laguna"
-       },
-       {
-        "name": "Plunder the Trollshaws",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/hob-51.webp"
-        ],
-        "url": "https://scryfall.com/card/hob/51/plunder-the-trollshaws"
-       },
-       {
-        "name": "Scour All Possibilities",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/mh1-67.webp"
-        ],
-        "url": "https://scryfall.com/card/mh1/67/scour-all-possibilities"
-       },
-       {
-        "name": "Think Twice",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/tsp-86.webp"
-        ],
-        "url": "https://scryfall.com/card/tsp/86/think-twice"
-       }
-      ]
-     ]
+     "name": "Dreams of Laguna",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/fin-50.webp"
+     ],
+     "url": "https://scryfall.com/card/fin/50/dreams-of-laguna"
     },
     {
-     "label": "3",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Temporal Tribulation",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/trc-51.webp"
-        ],
-        "url": "https://scryfall.com/card/trc/51/temporal-tribulation"
-       }
-      ]
-     ]
+     "name": "Temporal Tribulation",
+     "mv": 3,
+     "cost": "{2}{U}",
+     "faces": [
+      "/assets/cards/trc-51.webp"
+     ],
+     "url": "https://scryfall.com/card/trc/51/temporal-tribulation"
     },
     {
-     "label": "4",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Deep Analysis",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/tor-36.webp"
-        ],
-        "url": "https://scryfall.com/card/tor/36/deep-analysis"
-       },
-       {
-        "name": "Memory Deluge",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/mid-62.webp"
-        ],
-        "url": "https://scryfall.com/card/mid/62/memory-deluge"
-       },
-       {
-        "name": "Memories Returning",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/fin-63.webp"
-        ],
-        "url": "https://scryfall.com/card/fin/63/memories-returning"
-       }
-      ]
-     ]
+     "name": "Deep Analysis",
+     "mv": 4,
+     "cost": "{3}{U}",
+     "faces": [
+      "/assets/cards/tor-36.webp"
+     ],
+     "url": "https://scryfall.com/card/tor/36/deep-analysis"
     },
     {
-     "label": "5",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Fervent Denial",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/ody-86.webp"
-        ],
-        "url": "https://scryfall.com/card/ody/86/fervent-denial"
-       }
-      ]
-     ]
+     "name": "Fervent Denial",
+     "mv": 5,
+     "cost": "{3}{U}{U}",
+     "faces": [
+      "/assets/cards/ody-86.webp"
+     ],
+     "url": "https://scryfall.com/card/ody/86/fervent-denial"
     },
     {
-     "label": "6",
-     "mv": true,
-     "rows": [
-      [
-       {
-        "name": "Echo of Eons",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/mh1-46.webp"
-        ],
-        "url": "https://scryfall.com/card/mh1/46/echo-of-eons"
-       }
-      ]
-     ]
-    }
-   ]
-  },
-  {
-   "id": "combo",
-   "name": "Combo",
-   "short": "Co",
-   "subsections": [
-    {
-     "label": "Self-Contained",
-     "rows": [
-      [
-       {
-        "name": "Triskaidekaphile",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/mid-81.webp"
-        ],
-        "url": "https://scryfall.com/card/mid/81/triskaidekaphile"
-       }
-      ],
-      [
-       {
-        "name": "Grindstone",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/tmp-290.webp"
-        ],
-        "url": "https://scryfall.com/card/tmp/290/grindstone"
-       },
-       {
-        "name": "Painter's Servant",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/shm-257.webp"
-        ],
-        "url": "https://scryfall.com/card/shm/257/painters-servant"
-       }
-      ],
-      [
-       {
-        "name": "Teferi, Temporal Archmage",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/c14-19.webp"
-        ],
-        "url": "https://scryfall.com/card/c14/19/teferi-temporal-archmage"
-       },
-       {
-        "name": "The Chain Veil",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/m15-215.webp"
-        ],
-        "url": "https://scryfall.com/card/m15/215/the-chain-veil"
-       }
-      ],
-      [
-       {
-        "name": "Mycosynth Lattice",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/dst-130.webp"
-        ],
-        "url": "https://scryfall.com/card/dst/130/mycosynth-lattice"
-       },
-       {
-        "name": "Karn, the Great Creator",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/war-1.webp"
-        ],
-        "url": "https://scryfall.com/card/war/1/karn-the-great-creator"
-       }
-      ],
-      [
-       {
-        "name": "Aetherflux Reservoir",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/kld-192.webp"
-        ],
-        "url": "https://scryfall.com/card/kld/192/aetherflux-reservoir"
-       }
-      ]
-     ]
+     "name": "Echo of Eons",
+     "mv": 6,
+     "cost": "{4}{U}{U}",
+     "faces": [
+      "/assets/cards/mh1-46.webp"
+     ],
+     "url": "https://scryfall.com/card/mh1/46/echo-of-eons"
     },
     {
-     "label": "Infinite Mana",
-     "rows": [
-      [
-       {
-        "name": "Mox Lotus",
-        "mv": 15,
-        "faces": [
-         "/assets/cards/unh-124.webp"
-        ],
-        "url": "https://scryfall.com/card/unh/124/mox-lotus"
-       },
-       {
-        "name": "Spatula of the Ages",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/ugl-81.webp"
-        ],
-        "url": "https://scryfall.com/card/ugl/81/spatula-of-the-ages"
-       },
-       {
-        "name": "Everythingamajig",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/ust-147a.webp"
-        ],
-        "url": "https://scryfall.com/card/ust/147a/everythingamajig"
-       },
-       {
-        "name": "Planar Bridge",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/mps-45.webp"
-        ],
-        "url": "https://scryfall.com/card/mps/45/planar-bridge"
-       }
-      ],
-      [
-       {
-        "name": "Deadeye Navigator",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/avr-47.webp"
-        ],
-        "url": "https://scryfall.com/card/avr/47/deadeye-navigator"
-       },
-       {
-        "name": "Peregrine Drake",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/usg-88.webp"
-        ],
-        "url": "https://scryfall.com/card/usg/88/peregrine-drake"
-       }
-      ],
-      [
-       {
-        "name": "Basalt Monolith",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/lea-231.webp"
-        ],
-        "url": "https://scryfall.com/card/lea/231/basalt-monolith"
-       },
-       {
-        "name": "Forsaken Monument",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/znr-244.webp"
-        ],
-        "url": "https://scryfall.com/card/znr/244/forsaken-monument"
-       },
-       {
-        "name": "Forensic Gadgeteer",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/mkm-57.webp"
-        ],
-        "url": "https://scryfall.com/card/mkm/57/forensic-gadgeteer"
-       },
-       {
-        "name": "Rings of Brighthearth",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/lrw-259.webp"
-        ],
-        "url": "https://scryfall.com/card/lrw/259/rings-of-brighthearth"
-       },
-       {
-        "name": "Gilded Lotus",
-        "mv": 5,
-        "faces": [
-         "/assets/cards/mrd-175.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/175/gilded-lotus"
-       },
-       {
-        "name": "Voltaic Key",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/usg-314.webp"
-        ],
-        "url": "https://scryfall.com/card/usg/314/voltaic-key"
-       }
-      ],
-      [
-       {
-        "name": "Isochron Scepter",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/mrd-188.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/188/isochron-scepter"
-       },
-       {
-        "name": "Dramatic Reversal",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/kld-44.webp"
-        ],
-        "url": "https://scryfall.com/card/kld/44/dramatic-reversal"
-       }
-      ]
-     ]
+     "name": "Secrets of the Key",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/mid-73.webp"
+     ],
+     "url": "https://scryfall.com/card/mid/73/secrets-of-the-key"
     },
     {
-     "label": "Infinite Mana Outlets",
-     "rows": [
-      [
-       {
-        "name": "Secret Door",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/afr-71.webp"
-        ],
-        "url": "https://scryfall.com/card/afr/71/secret-door"
-       },
-       {
-        "name": "Stream of Thought",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/mh1-71.webp"
-        ],
-        "url": "https://scryfall.com/card/mh1/71/stream-of-thought"
-       },
-       {
-        "name": "Spectral Sailor",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/m20-76.webp"
-        ],
-        "url": "https://scryfall.com/card/m20/76/spectral-sailor"
-       },
-       {
-        "name": "Retrofitter Foundry",
-        "mv": 1,
-        "faces": [
-         "/assets/cards/c18-57.webp"
-        ],
-        "url": "https://scryfall.com/card/c18/57/retrofitter-foundry"
-       },
-       {
-        "name": "Folio of Fancies",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/eld-46.webp"
-        ],
-        "url": "https://scryfall.com/card/eld/46/folio-of-fancies"
-       },
-       {
-        "name": "Staff of Domination",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/5dn-156.webp"
-        ],
-        "url": "https://scryfall.com/card/5dn/156/staff-of-domination"
-       },
-       {
-        "name": "Ambassador Laquatus",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/tor-23.webp"
-        ],
-        "url": "https://scryfall.com/card/tor/23/ambassador-laquatus"
-       },
-       {
-        "name": "Goblin Cannon",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/5dn-125.webp"
-        ],
-        "url": "https://scryfall.com/card/5dn/125/goblin-cannon"
-       },
-       {
-        "name": "Rocket Launcher",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/atq-63.webp"
-        ],
-        "url": "https://scryfall.com/card/atq/63/rocket-launcher"
-       },
-       {
-        "name": "Johnny, Combo Player",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/unh-35.webp"
-        ],
-        "url": "https://scryfall.com/card/unh/35/johnny-combo-player"
-       }
-      ]
-     ]
+     "name": "Plunder the Trollshaws",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/hob-51.webp"
+     ],
+     "url": "https://scryfall.com/card/hob/51/plunder-the-trollshaws"
     },
     {
-     "label": "Empty Library",
-     "rows": [
-      [
-       {
-        "name": "Laboratory Maniac",
-        "mv": 3,
-        "faces": [
-         "/assets/cards/isd-61.webp"
-        ],
-        "url": "https://scryfall.com/card/isd/61/laboratory-maniac"
-       },
-       {
-        "name": "Jace, Wielder of Mysteries",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/war-54.webp"
-        ],
-        "url": "https://scryfall.com/card/war/54/jace-wielder-of-mysteries"
-       },
-       {
-        "name": "Timestream Navigator",
-        "mv": 2,
-        "faces": [
-         "/assets/cards/rix-59.webp"
-        ],
-        "url": "https://scryfall.com/card/rix/59/timestream-navigator"
-       }
-      ]
-     ]
+     "name": "Memory Deluge",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/mid-62.webp"
+     ],
+     "url": "https://scryfall.com/card/mid/62/memory-deluge"
     },
     {
-     "label": "Other",
-     "rows": [
-      [
-       {
-        "name": "Unwinding Clock",
-        "mv": 4,
-        "faces": [
-         "/assets/cards/nph-164.webp"
-        ],
-        "url": "https://scryfall.com/card/nph/164/unwinding-clock"
-       },
-       {
-        "name": "Mindslaver",
-        "mv": 6,
-        "faces": [
-         "/assets/cards/mrd-206.webp"
-        ],
-        "url": "https://scryfall.com/card/mrd/206/mindslaver"
-       }
-      ]
-     ]
+     "name": "Silent Departure",
+     "mv": 1,
+     "cost": "{U}",
+     "faces": [
+      "/assets/cards/isd-75.webp"
+     ],
+     "url": "https://scryfall.com/card/isd/75/silent-departure"
+    },
+    {
+     "name": "Scour All Possibilities",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/mh1-67.webp"
+     ],
+     "url": "https://scryfall.com/card/mh1/67/scour-all-possibilities"
+    },
+    {
+     "name": "Memories Returning",
+     "mv": 4,
+     "cost": "{2}{U}{U}",
+     "faces": [
+      "/assets/cards/fin-63.webp"
+     ],
+     "url": "https://scryfall.com/card/fin/63/memories-returning"
+    },
+    {
+     "name": "Think Twice",
+     "mv": 2,
+     "cost": "{1}{U}",
+     "faces": [
+      "/assets/cards/tsp-86.webp"
+     ],
+     "url": "https://scryfall.com/card/tsp/86/think-twice"
     }
    ]
   }
- ]
+ ],
+ "combo": {
+  "id": "combo",
+  "name": "Combo",
+  "short": "Co",
+  "subsections": [
+   {
+    "label": "Self-Contained",
+    "rows": [
+     [
+      {
+       "name": "Triskaidekaphile",
+       "mv": 2,
+       "cost": "{1}{U}",
+       "faces": [
+        "/assets/cards/mid-81.webp"
+       ],
+       "url": "https://scryfall.com/card/mid/81/triskaidekaphile"
+      }
+     ],
+     [
+      {
+       "name": "Grindstone",
+       "mv": 1,
+       "cost": "{1}",
+       "faces": [
+        "/assets/cards/tmp-290.webp"
+       ],
+       "url": "https://scryfall.com/card/tmp/290/grindstone"
+      },
+      {
+       "name": "Painter's Servant",
+       "mv": 2,
+       "cost": "{2}",
+       "faces": [
+        "/assets/cards/shm-257.webp"
+       ],
+       "url": "https://scryfall.com/card/shm/257/painters-servant"
+      }
+     ],
+     [
+      {
+       "name": "Teferi, Temporal Archmage",
+       "mv": 6,
+       "cost": "{4}{U}{U}",
+       "faces": [
+        "/assets/cards/c14-19.webp"
+       ],
+       "url": "https://scryfall.com/card/c14/19/teferi-temporal-archmage"
+      },
+      {
+       "name": "The Chain Veil",
+       "mv": 4,
+       "cost": "{4}",
+       "faces": [
+        "/assets/cards/m15-215.webp"
+       ],
+       "url": "https://scryfall.com/card/m15/215/the-chain-veil"
+      }
+     ],
+     [
+      {
+       "name": "Mycosynth Lattice",
+       "mv": 6,
+       "cost": "{6}",
+       "faces": [
+        "/assets/cards/dst-130.webp"
+       ],
+       "url": "https://scryfall.com/card/dst/130/mycosynth-lattice"
+      },
+      {
+       "name": "Karn, the Great Creator",
+       "mv": 4,
+       "cost": "{4}",
+       "faces": [
+        "/assets/cards/war-1.webp"
+       ],
+       "url": "https://scryfall.com/card/war/1/karn-the-great-creator"
+      }
+     ],
+     [
+      {
+       "name": "Aetherflux Reservoir",
+       "mv": 4,
+       "cost": "{4}",
+       "faces": [
+        "/assets/cards/kld-192.webp"
+       ],
+       "url": "https://scryfall.com/card/kld/192/aetherflux-reservoir"
+      }
+     ]
+    ]
+   },
+   {
+    "label": "Infinite Mana",
+    "rows": [
+     [
+      {
+       "name": "Mox Lotus",
+       "mv": 15,
+       "cost": "{15}",
+       "faces": [
+        "/assets/cards/unh-124.webp"
+       ],
+       "url": "https://scryfall.com/card/unh/124/mox-lotus"
+      },
+      {
+       "name": "Spatula of the Ages",
+       "mv": 4,
+       "cost": "{4}",
+       "faces": [
+        "/assets/cards/ugl-81.webp"
+       ],
+       "url": "https://scryfall.com/card/ugl/81/spatula-of-the-ages"
+      },
+      {
+       "name": "Everythingamajig",
+       "mv": 5,
+       "cost": "{5}",
+       "faces": [
+        "/assets/cards/ust-147a.webp"
+       ],
+       "url": "https://scryfall.com/card/ust/147a/everythingamajig"
+      },
+      {
+       "name": "Planar Bridge",
+       "mv": 6,
+       "cost": "{6}",
+       "faces": [
+        "/assets/cards/mps-45.webp"
+       ],
+       "url": "https://scryfall.com/card/mps/45/planar-bridge"
+      }
+     ],
+     [
+      {
+       "name": "Deadeye Navigator",
+       "mv": 6,
+       "cost": "{4}{U}{U}",
+       "faces": [
+        "/assets/cards/avr-47.webp"
+       ],
+       "url": "https://scryfall.com/card/avr/47/deadeye-navigator"
+      },
+      {
+       "name": "Peregrine Drake",
+       "mv": 5,
+       "cost": "{4}{U}",
+       "faces": [
+        "/assets/cards/usg-88.webp"
+       ],
+       "url": "https://scryfall.com/card/usg/88/peregrine-drake"
+      }
+     ],
+     [
+      {
+       "name": "Basalt Monolith",
+       "mv": 3,
+       "cost": "{3}",
+       "faces": [
+        "/assets/cards/lea-231.webp"
+       ],
+       "url": "https://scryfall.com/card/lea/231/basalt-monolith"
+      },
+      {
+       "name": "Forsaken Monument",
+       "mv": 5,
+       "cost": "{5}",
+       "faces": [
+        "/assets/cards/znr-244.webp"
+       ],
+       "url": "https://scryfall.com/card/znr/244/forsaken-monument"
+      },
+      {
+       "name": "Forensic Gadgeteer",
+       "mv": 3,
+       "cost": "{2}{U}",
+       "faces": [
+        "/assets/cards/mkm-57.webp"
+       ],
+       "url": "https://scryfall.com/card/mkm/57/forensic-gadgeteer"
+      },
+      {
+       "name": "Rings of Brighthearth",
+       "mv": 3,
+       "cost": "{3}",
+       "faces": [
+        "/assets/cards/lrw-259.webp"
+       ],
+       "url": "https://scryfall.com/card/lrw/259/rings-of-brighthearth"
+      },
+      {
+       "name": "Gilded Lotus",
+       "mv": 5,
+       "cost": "{5}",
+       "faces": [
+        "/assets/cards/mrd-175.webp"
+       ],
+       "url": "https://scryfall.com/card/mrd/175/gilded-lotus"
+      },
+      {
+       "name": "Voltaic Key",
+       "mv": 1,
+       "cost": "{1}",
+       "faces": [
+        "/assets/cards/usg-314.webp"
+       ],
+       "url": "https://scryfall.com/card/usg/314/voltaic-key"
+      }
+     ],
+     [
+      {
+       "name": "Isochron Scepter",
+       "mv": 2,
+       "cost": "{2}",
+       "faces": [
+        "/assets/cards/mrd-188.webp"
+       ],
+       "url": "https://scryfall.com/card/mrd/188/isochron-scepter"
+      },
+      {
+       "name": "Dramatic Reversal",
+       "mv": 2,
+       "cost": "{1}{U}",
+       "faces": [
+        "/assets/cards/kld-44.webp"
+       ],
+       "url": "https://scryfall.com/card/kld/44/dramatic-reversal"
+      }
+     ]
+    ]
+   },
+   {
+    "label": "Infinite Mana Outlets",
+    "rows": [
+     [
+      {
+       "name": "Secret Door",
+       "mv": 1,
+       "cost": "{U}",
+       "faces": [
+        "/assets/cards/afr-71.webp"
+       ],
+       "url": "https://scryfall.com/card/afr/71/secret-door"
+      },
+      {
+       "name": "Stream of Thought",
+       "mv": 1,
+       "cost": "{U}",
+       "faces": [
+        "/assets/cards/mh1-71.webp"
+       ],
+       "url": "https://scryfall.com/card/mh1/71/stream-of-thought"
+      },
+      {
+       "name": "Spectral Sailor",
+       "mv": 1,
+       "cost": "{U}",
+       "faces": [
+        "/assets/cards/m20-76.webp"
+       ],
+       "url": "https://scryfall.com/card/m20/76/spectral-sailor"
+      },
+      {
+       "name": "Retrofitter Foundry",
+       "mv": 1,
+       "cost": "{1}",
+       "faces": [
+        "/assets/cards/c18-57.webp"
+       ],
+       "url": "https://scryfall.com/card/c18/57/retrofitter-foundry"
+      },
+      {
+       "name": "Folio of Fancies",
+       "mv": 2,
+       "cost": "{1}{U}",
+       "faces": [
+        "/assets/cards/eld-46.webp"
+       ],
+       "url": "https://scryfall.com/card/eld/46/folio-of-fancies"
+      },
+      {
+       "name": "Staff of Domination",
+       "mv": 3,
+       "cost": "{3}",
+       "faces": [
+        "/assets/cards/5dn-156.webp"
+       ],
+       "url": "https://scryfall.com/card/5dn/156/staff-of-domination"
+      },
+      {
+       "name": "Ambassador Laquatus",
+       "mv": 3,
+       "cost": "{1}{U}{U}",
+       "faces": [
+        "/assets/cards/tor-23.webp"
+       ],
+       "url": "https://scryfall.com/card/tor/23/ambassador-laquatus"
+      },
+      {
+       "name": "Goblin Cannon",
+       "mv": 4,
+       "cost": "{4}",
+       "faces": [
+        "/assets/cards/5dn-125.webp"
+       ],
+       "url": "https://scryfall.com/card/5dn/125/goblin-cannon"
+      },
+      {
+       "name": "Rocket Launcher",
+       "mv": 4,
+       "cost": "{4}",
+       "faces": [
+        "/assets/cards/atq-63.webp"
+       ],
+       "url": "https://scryfall.com/card/atq/63/rocket-launcher"
+      },
+      {
+       "name": "Johnny, Combo Player",
+       "mv": 4,
+       "cost": "{2}{U}{U}",
+       "faces": [
+        "/assets/cards/unh-35.webp"
+       ],
+       "url": "https://scryfall.com/card/unh/35/johnny-combo-player"
+      }
+     ]
+    ]
+   },
+   {
+    "label": "Empty Library",
+    "rows": [
+     [
+      {
+       "name": "Laboratory Maniac",
+       "mv": 3,
+       "cost": "{2}{U}",
+       "faces": [
+        "/assets/cards/isd-61.webp"
+       ],
+       "url": "https://scryfall.com/card/isd/61/laboratory-maniac"
+      },
+      {
+       "name": "Jace, Wielder of Mysteries",
+       "mv": 4,
+       "cost": "{1}{U}{U}{U}",
+       "faces": [
+        "/assets/cards/war-54.webp"
+       ],
+       "url": "https://scryfall.com/card/war/54/jace-wielder-of-mysteries"
+      },
+      {
+       "name": "Timestream Navigator",
+       "mv": 2,
+       "cost": "{1}{U}",
+       "faces": [
+        "/assets/cards/rix-59.webp"
+       ],
+       "url": "https://scryfall.com/card/rix/59/timestream-navigator"
+      }
+     ]
+    ]
+   },
+   {
+    "label": "Other",
+    "rows": [
+     [
+      {
+       "name": "Unwinding Clock",
+       "mv": 4,
+       "cost": "{4}",
+       "faces": [
+        "/assets/cards/nph-164.webp"
+       ],
+       "url": "https://scryfall.com/card/nph/164/unwinding-clock"
+      },
+      {
+       "name": "Mindslaver",
+       "mv": 6,
+       "cost": "{6}",
+       "faces": [
+        "/assets/cards/mrd-206.webp"
+       ],
+       "url": "https://scryfall.com/card/mrd/206/mindslaver"
+      }
+     ]
+    ]
+   }
+  ]
+ }
 }
